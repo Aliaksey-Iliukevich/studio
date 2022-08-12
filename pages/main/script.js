@@ -23,11 +23,6 @@ const swiper = new Swiper('.swiper', {
         sensitivity: 1
     },
 
-    // effect: 'fade',
-    // fadeEffect: {
-    //     crossFade: true
-    // },
-
     a11y: {
       enabled: true,
       prevSliderMessage: 'Предыдущий слайд',
@@ -64,11 +59,6 @@ const swiper = new Swiper('.swiper', {
         sensitivity: 1
     },
 
-    // effect: 'fade',
-    // fadeEffect: {
-    //     crossFade: true
-    // },
-
     a11y: {
       enabled: true,
       prevSliderMessage: 'Предыдущий слайд',
@@ -77,6 +67,5 @@ const swiper = new Swiper('.swiper', {
       lastSliderMessage: 'Последний слайд',
     },
 
-    slidesPreView: 2.2,
-
+    SlidesPerView: 2.5
   });

@@ -177,8 +177,17 @@ hr {
   background-color: #b09494;
 }
 
+.swiper2 {
+  width: 85rem;
+}
+
 .swiper2:hover {
   cursor: pointer;
+}
+
+.swiper2-wrapper {
+  width: 85rem;
+  height: 18.75rem;
 }
 
 .logo-img {
@@ -460,8 +469,16 @@ hr {
   padding-top: 28px;
 }
 
+.map .contacts .contacts-links a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1995F0;
+}
+
 .map .yandex-map {
   margin-top: 28px;
+  margin-left: 95px;
 }
 
 .footer {
@@ -544,6 +561,7 @@ hr {
   line-height: 20px;
   color: #FFFFFF;
   margin: 0;
+  padding-bottom: 17px;
 }
 
 .footer .contact-us .call .media {
