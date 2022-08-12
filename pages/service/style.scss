@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+}
+.main-container{
+    width: 85rem;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #d9d9d9;
+    background-image:url('../../source/img/Group\ 67.png');
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 85rem;
+    height: 5rem;
+    background: linear-gradient(180deg, #312521 0%, #443733 100%);
+    .logo{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: #FFFFFF;
+    }
+    a{
+        text-decoration: none;
+
+    }
+    ul{
+        list-style: none;
+        width: 23.125rem;
+        display: flex;
+        justify-content: space-between;
+        li{
+            a{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                color: rgba(255, 255, 255, 0.4);
+                &:hover{
+                    color: #FFFFFF;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+            #service{
+                color: #FFFFFF;
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+    img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .tel{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 196.5%;
+        color: #FFFFFF;
+    }
+}
+.title{
+    width: 16.75rem;
+    height: 3.813rem;
+    display: flex;
+    align-items:center;
+    padding: 104px 997px 0 95px;
+    img{
+        width: 3.125rem;
+        height: 3.125rem;
+        padding-left: 30px;
+    }
+}
+.container{
+    width: 73.125rem;
+    height: 177.438rem;
+    padding: 10px 95px 100px 95px;
+    display: flex;
+    flex-wrap: wrap;
+   .card{
+    width: 35.625rem;
+    height: 53.313rem;
+    background: #FFFFFF;
+    border-radius: 29px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    transition: transform .8s;
+    &:nth-child(even){
+        margin-left: 30px;
+    }
+    &:hover{
+        transform: scale(1.08);
+    }
+    button{
+        width: 15.563rem;
+        height: 3.5rem;
+        background: #1995F0;
+        border-radius: 60px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        border: 0;
+        margin: 30px 291px 55px 30px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    img{
+        width: 31.875rem;
+        height: 18.125rem;
+        border-radius: 20px;
+        padding: 30px;
+    }
+    p{
+        width: 31.438rem;
+        height: 11.375rem;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 163%;
+        padding: 20px 37px 27px 30px;
+        margin: 0;
+    }
+    .sub-title{
+        width: 29.688rem;
+        height: 3.125rem;
+        display: flex;
+        align-items:center;
+        padding: 0 101px 5px 30px;
+        h2{
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 106%;
+            margin: 0;
+        }
+        img{
+            width: 3.125rem;
+            height: 3.125rem;
+            padding-right: 20px;
+        }
+    }
+    .price{
+        width: 29rem;
+        height: 1.875rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 27px 92px 30px 30px;
+        span{
+            width: 7rem;
+            height: 1.5rem;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            padding-right: 24px;
+        }
+        p{
+            width: 5rem;
+            height: 1.25rem;
+            padding: 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            padding-right: 42px;
+        }
+        a{
+            width: 28rem;
+            height: 1.875rem;
+            padding: 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #1995F0;
+            text-decoration: none;
+
+        }
+        img{
+            width: 1.688rem;
+            height: 1.688rem;
+            padding: 0 10px;
+        }
+    }
+   }
+
+}
+
+.footer{
+    width: 85rem;
+    height: 20.063rem;
+    background: linear-gradient(180deg, #312521 0%, #443733 100%);
+    display: flex;
+    justify-content: space-between;
+    .footer-logo{
+        margin: 33px 95px;
+    }
+    .footer-address{
+        display: flex;
+    }
+    .house{
+        display: flex;
+    }
+    img{
+        width: 18.688rem;
+        height: 15.938rem;
+    }
+    .contact-us{
+        display: flex;
+        width: 38.375rem;
+        height: 8.125rem;
+
+        .come{
+            width: 22.938rem;
+            height: 5.938rem;
+            display: flex;
+            flex-direction: column;
+            align-items:stretch;
+            padding-top: 82px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+            color: #FFFFFF;
+            .house{
+                padding-top: 15px;
+                align-items:center;
+                pre{
+                    margin: 0;
+                }
+            }
+            img{
+                width: 32px;
+                height: 32px;
+            }
+            span{
+                padding-left: 33px;
+            }
+        }
+        .call{
+            padding-top: 83px;
+            h6{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+                margin: 0;
+                padding-bottom: 30px;
+            }
+            .media{
+                width: 8.75rem;
+                height: 2.125rem;
+                display: flex;
+                justify-content: space-around;
+                padding-top: 28px;
+                img{
+                    width: 2.063rem;
+                    height: 2.063rem;
+                }
+            }
+            #tel{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+        }
+    }
+  
+}
+
+

@@ -1,18 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-.container{
+.main-container{
     width: 85rem;
     height: 100%;
     margin: 0 auto;
     font-family: 'Montserrat';
     font-style: normal;
-}
-
-.logo{
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    color: #FFFFFF;
 }
 
 .header{
@@ -21,8 +14,16 @@
     justify-content: space-evenly;
     width: 85rem;
     height: 5rem;
+    background: linear-gradient(180deg, #312521 0%, #443733 100%);
+    .logo{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: #FFFFFF;
+    }
     a{
         text-decoration: none;
+
     }
     ul{
         list-style: none;
@@ -34,7 +35,11 @@
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 22px;
-                color: #FFFFFF;
+                color: rgba(255, 255, 255, 0.4);
+                &:hover{
+                    color: #FFFFFF;
+                    border-bottom: 1px solid #fff;
+                }
             }
         }
     }
@@ -55,6 +60,7 @@ hr{
     height: 1px;
     background: #fff;
     border: 0;
+    margin: 0 auto;
 }
 
 .contact-us{
@@ -65,44 +71,32 @@ hr{
 .about{
     width: 85rem;
     height: 60.125rem;
-    background-image:url(../../source/img/bg.png);
-    position: relative;
-    .lines{
-        width: 85rem;
-        height: 33.188rem;
-        width: 100%; 
-        margin-top: 75px;
-    }
-
+    background-color: #443733;
+    background-image:url('../../source/img/lines-1-section.png');
+    background-size: 1560px 531px;
+    background-position: center;
+    background-repeat: no-repeat;
     span{
         font-weight: 600;
         font-size: 80px;
         line-height: 103.9%;
         color: #FFFFFF;
         margin: 0;
-        text-align: left;
-    }
-    .title{
-        position: absolute;
-        top	: 10%;
-        width: 100%;
     }
 }
 
 .about-desciption{
     width: 85rem;
     height: 32rem;
-    position: absolute;
-    top: 37%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 11px;
+    position: relative;
     .subtitle{
         width: 27.25rem;
         height: 18.125rem;
-        position: absolute;
-        top: 42%;
-        right: 61%;
+        align-self: flex-end;
         p{
             font-family: 'Montserrat';
             font-style: normal;
@@ -131,8 +125,6 @@ hr{
 .about-slider{
     width: 43.75rem;
     height: 31.375rem;
-    position: absolute;
-    left: 40%;
 }
 
 .swiper:hover{
@@ -165,9 +157,9 @@ hr{
     width: 10.125rem;
     height: 11.125rem;
     position: absolute;
-    right: 13%;
+    right: 10%;
     z-index: 2;
-    top: -18%;
+    top: -14%;
 }
 
 .service{
@@ -382,6 +374,12 @@ hr{
     .footer-logo{
         margin: 33px 95px;
     }
+    .footer-address{
+        display: flex;
+    }
+    .house{
+        display: flex;
+    }
     img{
         width: 18.688rem;
         height: 15.938rem;
@@ -397,7 +395,7 @@ hr{
             display: flex;
             flex-direction: column;
             align-items:stretch;
-            padding-top: 67px;
+            padding-top: 82px;
             font-weight: 400;
             font-size: 16px;
             line-height: 25px;
@@ -425,7 +423,7 @@ hr{
                 line-height: 20px;
                 color: #FFFFFF;
                 margin: 0;
-                padding-bottom: 17px;
+                padding-bottom: 30px;
             }
             .media{
                 width: 8.75rem;

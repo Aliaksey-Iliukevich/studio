@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+}
+
 .main-container {
   width: 85rem;
   height: 100%;
   margin: 0 auto;
+  background-color: #d9d9d9;
+  background-image: url("../../source/img/Group 67.png");
 }
 
 .header {
@@ -55,7 +61,7 @@
   border-bottom: 1px solid #fff;
 }
 
-.header ul li #about {
+.header ul li #service {
   color: #FFFFFF;
   border-bottom: 1px solid #fff;
 }
@@ -72,138 +78,66 @@
   color: #FFFFFF;
 }
 
-.about-us {
-  width: 85rem;
-  height: 83rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #d9d9d9;
-}
-
-.about-us .swiper {
-  width: 73.125rem;
-  height: 32.688rem;
-  padding-top: 95px;
-}
-
-.about-us .swiper .swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.about-us .swiper .swiper-slide img {
-  width: 25.625rem;
-  height: 30rem;
-}
-
-.about-us .swiper .description {
-  width: 35.625rem;
-  height: 27.188rem;
-  padding-right: 30px;
-}
-
-.about-us .swiper .description .name {
-  width: 18.313rem;
+.title {
+  width: 16.75rem;
   height: 3.813rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 104px 997px 0 95px;
 }
 
-.about-us .swiper .description .name img {
-  padding-left: 30px;
+.title img {
   width: 3.125rem;
   height: 3.125rem;
-}
-
-.about-us .swiper .description .text p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 183.5%;
-}
-
-.about-us .contacts-container {
-  width: 85rem;
-  height: 32.813rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 80px;
-}
-
-.about-us .contacts-container #relax {
-  width: 40.625rem;
-  height: 36.813rem;
-}
-
-.about-us .contacts-container .contacts {
-  padding-top: 80px;
-  padding-left: 95px;
-}
-
-.about-us .contacts-container .contacts h2 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 183%;
-  margin: 0;
-}
-
-.about-us .contacts-container .contacts .sub-title {
-  width: 17.5rem;
-  height: 3.125rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.about-us .contacts-container .contacts .sub-title img {
-  width: 2.5rem;
-  height: 2.5rem;
   padding-left: 30px;
 }
 
-.about-us .contacts-container .contacts .info .phone {
+.container {
+  width: 73.125rem;
+  height: 177.438rem;
+  padding: 10px 95px 100px 95px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.about-us .contacts-container .contacts .info .phone img {
-  padding-right: 5px;
+.container .card {
+  width: 35.625rem;
+  height: 53.313rem;
+  background: #FFFFFF;
+  border-radius: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 40px;
+  -webkit-transition: -webkit-transform .8s;
+  transition: -webkit-transform .8s;
+  transition: transform .8s;
+  transition: transform .8s, -webkit-transform .8s;
 }
 
-.about-us .contacts-container .contacts .info h6 {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  padding: 30px 0 11px 0;
-  margin: 0;
+.container .card:nth-child(even) {
+  margin-left: 30px;
 }
 
-.about-us .contacts-container .contacts .info ul {
-  padding: 15px 0;
-  margin: 0;
+.container .card:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
-.about-us .contacts-container .contacts .info ul li {
-  list-style: none;
-  padding-top: 10px;
-}
-
-.about-us .contacts-container .contacts .info button {
+.container .card button {
   width: 15.563rem;
-  height: 2.75rem;
+  height: 3.5rem;
   background: #1995F0;
   border-radius: 60px;
   font-weight: 700;
@@ -211,118 +145,103 @@
   line-height: 20px;
   color: #FFFFFF;
   border: 0;
+  margin: 30px 291px 55px 30px;
 }
 
-.about-us .contacts-container .contacts .info button:hover {
+.container .card button:hover {
   cursor: pointer;
 }
 
-.about-us .contacts-container .contacts .insta {
-  width: 32.813rem;
-  height: 11.375;
+.container .card img {
+  width: 31.875rem;
+  height: 18.125rem;
+  border-radius: 20px;
+  padding: 30px;
 }
 
-.about-us .contacts-container .contacts .insta h2 {
-  padding-top: 92px;
-}
-
-.about-us .contacts-container .contacts .insta p {
+.container .card p {
+  width: 31.438rem;
+  height: 11.375rem;
   font-weight: 400;
   font-size: 16px;
-  line-height: 183%;
+  line-height: 163%;
+  padding: 20px 37px 27px 30px;
+  margin: 0;
 }
 
-.about-us .contacts-container .contacts .insta .insta-link {
-  width: 23.125rem;
-  height: 5rem;
+.container .card .sub-title {
+  width: 29.688rem;
+  height: 3.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 101px 5px 30px;
 }
 
-.about-us .contacts-container .contacts .insta .insta-link img {
-  padding-left: 72px;
-}
-
-.about-us .contacts-container .contacts .insta .insta-link a {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 183%;
-  color: #000000;
-  text-decoration: none;
-}
-
-.map {
-  width: 85rem;
-  height: 42.125rem;
-  background-color: #D9D9D9;
-  padding-top: 93px;
-}
-
-.map .address {
-  width: 15rem;
-  height: 3.813rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 95px;
-}
-
-.map .address img {
-  width: 35px;
-  height: 35px;
-  padding-left: 30px;
-}
-
-.map .contacts {
-  width: 73.188rem;
-  height: 1.375rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 95px;
-}
-
-.map .contacts span {
-  width: 20.875rem;
-  height: 1.375rem;
+.container .card .sub-title h2 {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  padding-right: 500px;
-  padding-top: 28px;
+  font-size: 40px;
+  line-height: 106%;
+  margin: 0;
 }
 
-.map .contacts .contacts-links {
+.container .card .sub-title img {
+  width: 3.125rem;
+  height: 3.125rem;
+  padding-right: 20px;
+}
+
+.container .card .price {
+  width: 29rem;
+  height: 1.875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 14.938rem;
-  height: 1.375rem;
-  padding-top: 28px;
+  padding: 27px 92px 30px 30px;
 }
 
-.map .contacts .contacts-links a {
+.container .card .price span {
+  width: 7rem;
+  height: 1.5rem;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding-right: 24px;
+}
+
+.container .card .price p {
+  width: 5rem;
+  height: 1.25rem;
+  padding: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #1995F0;
+  padding-right: 42px;
 }
 
-.map .yandex-map {
-  margin-top: 28px;
-  margin-left: 95px;
+.container .card .price a {
+  width: 28rem;
+  height: 1.875rem;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1995F0;
+  text-decoration: none;
+}
+
+.container .card .price img {
+  width: 1.688rem;
+  height: 1.688rem;
+  padding: 0 10px;
 }
 
 .footer {
