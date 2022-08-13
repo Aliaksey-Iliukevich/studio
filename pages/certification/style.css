@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+html {
+  margin: 0;
+}
+
 .main-container {
   width: 85rem;
   height: 100%;
@@ -21,7 +25,6 @@
   height: 5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#312521), to(#443733));
   background: linear-gradient(180deg, #312521 0%, #443733 100%);
-  background-size: 100%;
 }
 
 .header .logo {
@@ -58,6 +61,11 @@
   border-bottom: 1px solid #fff;
 }
 
+.header ul #certification {
+  color: #FFFFFF;
+  border-bottom: 1px solid #fff;
+}
+
 .header img {
   width: 2rem;
   height: 2rem;
@@ -70,99 +78,88 @@
   color: #FFFFFF;
 }
 
-.title {
-  padding-top: 47px;
-}
-
-hr {
-  width: 1170px;
-  height: 1px;
-  background: #fff;
-  border: 0;
-  margin: 0 auto;
-}
-
-.contact-us {
+section {
   width: 85rem;
-  height: 5rem;
+  height: 83.438rem;
 }
 
-.about {
+.content {
   width: 85rem;
-  height: 60.125rem;
-  background-color: #443733;
-  background-image: url("../../source/img/lines-1-section.png");
-  background-size: 100%;
+  height: 82rem;
+  background-color: #D9D9D9;
+  background-image: url("../../source/img/service-bg.png");
+  background-size: 85rem 54.375;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.about span {
-  font-weight: 600;
-  font-size: 80px;
-  line-height: 103.9%;
-  color: #FFFFFF;
-  margin: 0;
-}
-
-.about-desciption {
-  width: 85rem;
-  height: 32rem;
-  min-width: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 11px;
-  position: relative;
 }
 
-.about-desciption .subtitle {
-  width: 27.25rem;
-  height: 18.125rem;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+.content .title {
+  width: 51.563rem;
+  height: 7.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 94px 522px 0 95px;
 }
 
-.about-desciption .subtitle p {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 196.5%;
-  color: #FFFFFF;
+.content .title img {
+  width: 3.125rem;
+  height: 3.125rem;
+  padding-left: 30px;
+  padding-top: 15px;
 }
 
-.about-desciption .subtitle button {
-  width: 15.563rem;
-  height: 2.75rem;
-  background: #1995F0;
-  border-radius: 60px;
+.content .title h1 {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-  border: 0;
+  font-size: 50px;
+  line-height: 61px;
+  margin: 0;
 }
 
-.about-desciption .subtitle button:hover {
-  cursor: pointer;
+.content .container {
+  width: 85rem;
+  height: 54.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.about-slider {
-  width: 43.75rem;
-  height: 31.375rem;
+.content .form {
+  width: 31.25rem;
+  height: 32.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 100px;
 }
 
-.swiper:hover {
-  cursor: pointer;
+.content .form .form-title {
+  width: 19.375rem;
+  height: 2.625rem;
 }
 
-.swiper-slide {
+.content .form .form-title h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 106%;
+  color: #fff;
+}
+
+.content .form .form-content {
+  width: 31.25rem;
+  height: 28.25rem;
+  background: #EEEAE4;
+  border-radius: 20px;
+  margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,175 +168,56 @@ hr {
           justify-content: center;
 }
 
-.swiper-scrollbar-drag {
-  background-color: #b09494;
-}
-
-.swiper2 {
-  width: 85rem;
-}
-
-.swiper2:hover {
-  cursor: pointer;
-}
-
-.swiper2-wrapper {
-  width: 85rem;
-  height: 18.75rem;
-}
-
-.logo-img {
-  width: 10.125rem;
-  height: 11.125rem;
-  position: absolute;
-  right: 10%;
-  z-index: 2;
-  top: -14%;
-}
-
-.service {
-  width: 85rem;
-  height: 89.125rem;
-  background-color: #D9D9D9;
-}
-
-.service .sub-title {
-  width: 16.75rem;
-  height: 3.813rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 115px 996px 21px 96px;
-}
-
-.service .sub-title h2 {
-  margin: 0;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 61px;
-  color: #000000;
-}
-
-.service .sub-title img {
-  width: 50px;
-  height: 50px;
-  padding-left: 30px;
-}
-
-.service .service-slider {
-  width: 21.313rem;
-  height: 14.875rem;
-  padding: 21px 0 0 95px;
-}
-
-.service .service-slider .swiper-slide {
-  width: 21.313rem;
-  height: 14.875rem;
-}
-
-.service .service-slider .swiper-slide h4 {
-  border-bottom: 3px solid #000000;
-  padding-bottom: 12px;
-}
-
-.service .service-slider .swiper-slide span {
-  padding-right: 25px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  color: #000000;
-}
-
-.service button {
-  width: 15.563rem;
-  height: 2.75rem;
-  margin-left: 95px;
-  margin-top: 48px;
-  background: #1995F0;
-  border-radius: 60px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-}
-
-.service button:hover {
-  cursor: pointer;
-}
-
-.service .order {
-  margin: 94px 101px 115px 95px;
-  width: 46.5rem;
-  height: 43.063rem;
-}
-
-.service .order h2 {
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 61px;
-}
-
-.service .order .order-container {
-  width: 85rem;
-  height: 39.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.service .order .order-container img {
-  width: 41.5rem;
-  height: 39.25rem;
-}
-
-.service .order .order-info {
+.content .order-choice {
   width: 23.125rem;
-  height: 21.875rem;
-}
-
-.service .order .order-choice {
-  width: 15.063rem;
   height: 1.375rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 52px;
 }
 
-.service .order .order-choice button {
+.content .order-choice button {
   width: 7.188rem;
   height: 1.375rem;
-  background-color: #D9D9D9;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #606060;
+  background: none;
   border: 0;
-  margin: 0 15px;
 }
 
-.service .order .order-choice .active {
+.content .order-choice button:hover {
+  cursor: pointer;
+}
+
+.content .order-choice .active {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #000000;
 }
 
-.service .order form {
+.content form {
   width: 23.125rem;
   height: 18.75rem;
-  padding-top: 28px;
 }
 
-.service .order form input {
+.content form input {
   width: 23.125rem;
   height: 2.625rem;
   background: #FFFFFF;
   border-radius: 60px;
-  margin-top: 17px;
+  margin-top: 15px;
 }
 
-.service .order form input::-webkit-input-placeholder {
+.content form input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -347,7 +225,7 @@ hr {
   padding: 11px 203px 11px 23px;
 }
 
-.service .order form input:-ms-input-placeholder {
+.content form input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -355,7 +233,7 @@ hr {
   padding: 11px 203px 11px 23px;
 }
 
-.service .order form input::-ms-input-placeholder {
+.content form input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -363,7 +241,7 @@ hr {
   padding: 11px 203px 11px 23px;
 }
 
-.service .order form input::placeholder {
+.content form input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -371,123 +249,50 @@ hr {
   padding: 11px 203px 11px 23px;
 }
 
-.service .order form input:focus {
+.content form input:focus {
   outline: 4px solid #000;
   border: 0;
 }
 
-.service .order form #submit {
+.content form #submit {
   background: #1995F0;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  margin-top: 30px;
 }
 
-.service .order form #submit:hover {
+.content form #submit:hover {
   cursor: pointer;
 }
 
-.service .order .reminder {
-  width: 22.875rem;
-  height: 6.5rem;
+.content .reminder {
+  width: 29.25rem;
+  height: 4.875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 61px;
+  padding: 40px 842px 106px 52px;
 }
 
-.service .order .reminder img {
+.content .reminder img {
   width: 50px;
   height: 50px;
 }
 
-.service .order .reminder p {
-  width: 16.875rem;
-  height: 6.5rem;
+.content .reminder p {
+  width: 23.125rem;
+  height: 4.875rem;
   padding-left: 46px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 163%;
   color: #000000;
-}
-
-.service .order .order-img {
-  padding-left: 130px;
-}
-
-.map {
-  width: 85rem;
-  height: 42.125rem;
-  background-color: #D9D9D9;
-  padding-top: 115px;
-}
-
-.map .address {
-  width: 15rem;
-  height: 3.813rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 95px;
-}
-
-.map .address img {
-  width: 35px;
-  height: 35px;
-  padding-left: 30px;
-}
-
-.map .contacts {
-  width: 73.188rem;
-  height: 1.375rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 95px;
-}
-
-.map .contacts span {
-  width: 20.875rem;
-  height: 1.375rem;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  padding-right: 500px;
-  padding-top: 28px;
-}
-
-.map .contacts .contacts-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 14.938rem;
-  height: 1.375rem;
-  padding-top: 28px;
-}
-
-.map .contacts .contacts-links a {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #1995F0;
-}
-
-.map .yandex-map {
-  margin-top: 28px;
-  margin-left: 95px;
 }
 
 .footer {

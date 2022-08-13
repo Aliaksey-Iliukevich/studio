@@ -15,6 +15,7 @@
     width: 85rem;
     height: 5rem;
     background: linear-gradient(180deg, #312521 0%, #443733 100%);
+    background-size: 100%;
     .logo{
         font-weight: 700;
         font-size: 30px;
@@ -55,6 +56,10 @@
     }
 }
 
+.title{
+    padding-top: 47px;
+}
+
 hr{
     width: 1170px;
     height: 1px;
@@ -73,7 +78,7 @@ hr{
     height: 60.125rem;
     background-color: #443733;
     background-image:url('../../source/img/lines-1-section.png');
-    background-size: 1560px 531px;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     span{
@@ -88,6 +93,7 @@ hr{
 .about-desciption{
     width: 85rem;
     height: 32rem;
+    min-width: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -256,6 +262,10 @@ hr{
                 border: 0;
                 margin: 0 15px;
             }
+            .active{
+                text-decoration-line: underline;
+                color: #000000;
+            }
         }
         form{
             width: 23.125rem;
@@ -273,6 +283,10 @@ hr{
                     line-height: 20px;
                     color: #707070;
                     padding: 11px 203px 11px 23px;
+                }
+                &:focus{
+                    outline: 4px solid #000;
+                    border: 0;
                 }
             }
             #submit{

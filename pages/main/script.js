@@ -1,14 +1,5 @@
 const swiper = new Swiper('.swiper', {
 
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
     scrollbar: {
       el: '.swiper-scrollbar',
     },
@@ -29,21 +20,17 @@ const swiper = new Swiper('.swiper', {
       nextSliderMessage: 'Следующий слайд',
       firstSliderMessage: 'Первый слайд',
       lastSliderMessage: 'Последний слайд',
-    }
+    },
 
+    speed: 600,
 
+    centeredSlides: true,
+
+    loop: true,
+    
   });
 
-  const swiper2 = new Swiper('.swiper2', {
-
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  const swiper2 = new Swiper2('.swiper2', {
   
     scrollbar: {
       el: '.swiper2-scrollbar',
@@ -67,5 +54,6 @@ const swiper = new Swiper('.swiper', {
       lastSliderMessage: 'Последний слайд',
     },
 
-    SlidesPerView: 2.5
+
+
   });
