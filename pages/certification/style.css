@@ -86,7 +86,7 @@ section {
 .content {
   width: 85rem;
   height: 82rem;
-  background-color: #D9D9D9;
+  background-color: #EEEAE4;
   background-image: url("../../source/img/service-bg.png");
   background-size: 85rem 54.375;
   background-position: center;
@@ -189,10 +189,22 @@ section {
   color: #606060;
   background: none;
   border: 0;
+  position: relative;
+  top: 0;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .content .order-choice button:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.content .order-choice button:active {
+  top: 3px;
 }
 
 .content .order-choice .active {
@@ -210,11 +222,13 @@ section {
 }
 
 .content form input {
-  width: 23.125rem;
+  width: 20.125rem;
   height: 2.625rem;
   background: #FFFFFF;
   border-radius: 60px;
   margin-top: 15px;
+  border: 0;
+  padding: 0 25px;
 }
 
 .content form input::-webkit-input-placeholder {
@@ -250,21 +264,38 @@ section {
 }
 
 .content form input:focus {
-  outline: 4px solid #000;
-  border: 0;
+  -webkit-box-shadow: 0 0 15px #000000;
+          box-shadow: 0 0 15px #000000;
+  outline: none;
 }
 
 .content form #submit {
+  width: 23.125rem;
+  height: 2.688rem;
+  margin: 38px 0;
   background: #1995F0;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  margin-top: 30px;
+  border-radius: 20px;
+  border: 0;
+  position: relative;
+  top: 0;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .content form #submit:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.content form #submit:active {
+  top: 3px;
 }
 
 .content .reminder {

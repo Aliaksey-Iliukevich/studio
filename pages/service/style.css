@@ -7,7 +7,7 @@
   width: 85rem;
   height: 100%;
   margin: 0 auto;
-  background-color: #d9d9d9;
+  background-color: #EEEAE4;
   background-image: url("../../source/img/Group 67.png");
 }
 
@@ -140,16 +140,28 @@
   height: 3.5rem;
   background: #1995F0;
   border-radius: 60px;
+  border: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  border: 0;
   margin: 30px 291px 55px 30px;
+  position: relative;
+  top: 0;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .container .card button:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container .card button:active {
+  top: 3px;
 }
 
 .container .card img {

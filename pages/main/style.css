@@ -142,15 +142,27 @@ hr {
   height: 2.75rem;
   background: #1995F0;
   border-radius: 60px;
+  border: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  border: 0;
+  position: relative;
+  top: 0;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .about-desciption .subtitle button:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.about-desciption .subtitle button:active {
+  top: 3px;
 }
 
 .about-slider {
@@ -172,7 +184,7 @@ hr {
 }
 
 .swiper-scrollbar-drag {
-  background-color: #b09494;
+  background-color: #FFF;
 }
 
 .swiper2 {
@@ -200,7 +212,7 @@ hr {
 .service {
   width: 85rem;
   height: 89.125rem;
-  background-color: #D9D9D9;
+  background-color: #EEEAE4;
 }
 
 .service .sub-title {
@@ -234,7 +246,7 @@ hr {
 .service .service-slider {
   width: 21.313rem;
   height: 14.875rem;
-  padding: 21px 0 0 95px;
+  padding: 21px 0 0 460px;
 }
 
 .service .service-slider .swiper-slide {
@@ -259,18 +271,31 @@ hr {
 .service button {
   width: 15.563rem;
   height: 2.75rem;
-  margin-left: 95px;
+  margin-left: 460px;
   margin-top: 48px;
   background: #1995F0;
   border-radius: 60px;
+  border: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  position: relative;
+  top: 0;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .service button:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.service button:active {
+  top: 3px;
 }
 
 .service .order {
@@ -326,17 +351,19 @@ hr {
 }
 
 .service .order form {
-  width: 23.125rem;
-  height: 18.75rem;
+  width: 28.5rem;
+  height: 24rem;
   padding-top: 28px;
 }
 
 .service .order form input {
-  width: 23.125rem;
+  width: 20.125rem;
   height: 2.625rem;
   background: #FFFFFF;
   border-radius: 60px;
-  margin-top: 17px;
+  margin-top: 15px;
+  padding: 0 25px;
+  border: 0;
 }
 
 .service .order form input::-webkit-input-placeholder {
@@ -372,20 +399,68 @@ hr {
 }
 
 .service .order form input:focus {
-  outline: 4px solid #000;
-  border: 0;
+  -webkit-box-shadow: 0 0 15px #6e6e6e;
+          box-shadow: 0 0 15px #6e6e6e;
+  outline: none;
 }
 
 .service .order form #submit {
+  width: 23.125rem;
+  height: 2.688rem;
+  margin: 38px 0;
   background: #1995F0;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  position: relative;
+  top: 0;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .service .order form #submit:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.service .order form #submit:active {
+  top: 3px;
+  -webkit-box-shadow: 0 0 15px #6e6e6e;
+          box-shadow: 0 0 15px #6e6e6e;
+}
+
+.service .order form #submit:focus {
+  -webkit-box-shadow: 0 0 10px #6e6e6e;
+          box-shadow: 0 0 10px #6e6e6e;
+  outline: none;
+}
+
+.service .order .form-body {
+  position: relative;
+}
+
+.service .order .form-body::after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 28.5rem;
+  height: 24rem;
+  border-radius: 24px;
+  background: rgba(175, 175, 175, 0.9) url("../../source/img/22.gif") center/50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.service .order .form-body._sending::after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .service .order .reminder {
@@ -423,7 +498,7 @@ hr {
 .map {
   width: 85rem;
   height: 42.125rem;
-  background-color: #D9D9D9;
+  background-color: #EEEAE4;
   padding-top: 115px;
 }
 
