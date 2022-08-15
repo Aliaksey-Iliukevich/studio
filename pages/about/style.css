@@ -48,16 +48,36 @@
   font-size: 18px;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.4);
+  position: relative;
 }
 
 .header ul li a:hover {
   color: #FFFFFF;
-  border-bottom: 1px solid #fff;
+}
+
+.header ul li a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ffffff;
+  content: "";
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.header ul li a:hover:after, .header ul li a:focus:after {
+  width: 100%;
 }
 
 .header ul li #about {
   color: #FFFFFF;
   border-bottom: 1px solid #fff;
+}
+
+.header ul li #about:hover::after {
+  display: none;
 }
 
 .header img {
@@ -70,6 +90,26 @@
   font-size: 18px;
   line-height: 196.5%;
   color: #FFFFFF;
+}
+
+.header #instagram {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.header #instagram:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.header #telegram {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.header #telegram:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .about-us {
@@ -265,6 +305,27 @@
   line-height: 183%;
   color: #000000;
   text-decoration: none;
+  position: relative;
+}
+
+.about-us .contacts-container .contacts .insta .insta-link a:hover {
+  color: #000000;
+}
+
+.about-us .contacts-container .contacts .insta .insta-link #link:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000000;
+  content: "";
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.about-us .contacts-container .contacts .insta .insta-link #link:hover:after, .about-us .contacts-container .contacts .insta .insta-link #link:focus:after {
+  width: 100%;
 }
 
 .map {
@@ -332,6 +393,12 @@
   color: #1995F0;
 }
 
+.map .contacts .contacts-links a:hover {
+  color: #176ba7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .map .yandex-map {
   margin-top: 28px;
   margin-left: 95px;
@@ -348,6 +415,26 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footer .instagram {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.footer .instagram:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer #wa {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.footer #wa:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .footer .footer-logo {

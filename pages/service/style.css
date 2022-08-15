@@ -54,16 +54,36 @@
   font-size: 18px;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.4);
+  position: relative;
 }
 
 .header ul li a:hover {
   color: #FFFFFF;
-  border-bottom: 1px solid #fff;
+}
+
+.header ul li a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ffffff;
+  content: "";
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.header ul li a:hover:after, .header ul li a:focus:after {
+  width: 100%;
 }
 
 .header ul li #service {
   color: #FFFFFF;
   border-bottom: 1px solid #fff;
+}
+
+.header ul li #service:hover::after {
+  display: none;
 }
 
 .header img {
@@ -76,6 +96,26 @@
   font-size: 18px;
   line-height: 196.5%;
   color: #FFFFFF;
+}
+
+.header #instagram {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.header #instagram:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.header #telegram {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.header #telegram:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .title {
@@ -267,6 +307,26 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footer .instagram {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.footer .instagram:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer #wa {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.footer #wa:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .footer .footer-logo {

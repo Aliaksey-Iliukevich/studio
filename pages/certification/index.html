@@ -37,14 +37,21 @@
                         <div class="form-content">
                             <div class="order-info">
                                 <div class="order-choice">
-                                    <button class="active" type="button">Сертификат</button>
-                                    <button type="button"> Абонемент</button>
+                                    <button class="option active" type="button">Сертификат</button>
+                                    <button class="option" type="button"> Абонемент</button>
                                 </div>
                                 <form action="" id="form">
                                     <input type="text" placeholder="Ваше имя" required>
                                     <input type="tel" placeholder="+375 (XX)  XXX-XX-XX" required>
                                     <input type="text" placeholder="Кол-во сеансов" required>
-                                    <input type="text" placeholder="Вид услуги >" required>
+                                    <select class="select-service" size="1" name="select" accesskey form>
+                                        <option value="> Биометрическая терапия">> Биометрическая терапия</option>
+                                        <option value="> Кинезио-терапия">> Кинезио-терапия</option>
+                                        <option value="> Массаж">> Массаж</option>
+                                        <option value="> Работа со шрамом">> Работа со шрамом</option>
+                                        <option value="> Эмоциональная коррекция">> Эмоциональная коррекция</option>
+                                        <option value="> Постановка Атланта">> Постановка Атланта</option>
+                                    </select>
                                     <button id="submit" type="submit">Отправить</button>
                                 </form>
                             </div>
@@ -75,13 +82,14 @@
                     <h6>Контакты</h6>
                     <a id="tel" href="tel:+375 (29) 252-93-44">+375 (29) 252-93-44</a>
                     <div class="media">
-                        <a target="_blank" href="https://wa.me/+375292529344"><img src="../../source/icons/whatsapp-logo.png" alt="whatsapp-logo"></a>
-                        <a target="_blank" href="viber://chat?number=%2B375292529344"><img src="../../source/icons/viber-logo.png" alt="viber-logo"></a>
-                        <a target="_blank" href="https://www.instagram.com/massage.kinezio.pro/?igshid=YmMyMTA2M2Y%3D"><img src="../../source/icons/instagram-logo.png" alt="instagram-logo"></a>
+                        <a id="wa" target="_blank" href="https://wa.me/+375292529344"><img src="../../source/icons/whatsapp-logo.png" alt="whatsapp-logo"></a>
+                        <!-- <a target="_blank" href="viber://chat?number=%2B375292529344"><img src="../../source/icons/viber-logo.png" alt="viber-logo"></a> -->
+                        <a class="instagram" target="_blank" href="https://www.instagram.com/massage.kinezio.pro/?igshid=YmMyMTA2M2Y%3D"><img src="../../source/icons/instagram-logo.png" alt="instagram-logo"></a>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

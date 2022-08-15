@@ -31,18 +31,21 @@ document.addEventListener('DOMContentLoaded', function() {
     
   }
 
-    let service = document.getElementsByClassName('option');
-    console.log(service);
-    service.forEach(item => {
-      service.addEventListener('click', () => {
-        if (item.classList.contains('active')){
-          item.classList.remove('active');
-        } else {
-          item.classList.add('active');
-        }
-      })
-    });
+    let service = document.querySelectorAll('.option');
   
+    service[0].addEventListener('click', () => {
+      if(service[1].classList.contains('active')){
+        service[1].classList.remove('active');
+        service[0].classList.add('active');
+      }
+    })
+
+    service[1].addEventListener('click', () => {
+      if(service[0].classList.contains('active')){
+        service[0].classList.remove('active');
+        service[1].classList.add('active');
+      }
+    })
 });
 
 const swiper = new Swiper('.swiper', {
@@ -77,7 +80,7 @@ const swiper = new Swiper('.swiper', {
     
   });
 
-  const swiper2 = new Swiper2('.swiper2', {
+  const swiper2 = new Swiper('.swiper2', {
   
     scrollbar: {
       el: '.swiper2-scrollbar',

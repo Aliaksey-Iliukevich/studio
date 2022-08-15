@@ -39,14 +39,31 @@
                 font-size: 18px;
                 line-height: 22px;
                 color: rgba(255, 255, 255, 0.4);
+                position: relative;
                 &:hover{
-                    color: #FFFFFF;
-                    border-bottom: 1px solid #fff;
+                    color:#FFFFFF;
+                }
+                &:after {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    width: 0;
+                    height: 1px;
+                    background-color: #ffffff;
+                    content: "";
+                    transition: width 0.5s;
+                }
+                &:hover:after,
+                &:focus:after {
+                    width: 100%;
                 }
             }
             #service{
                 color: #FFFFFF;
                 border-bottom: 1px solid #fff;
+                &:hover::after{
+                    display: none;
+                }
             }
         }
     }
@@ -59,6 +76,19 @@
         font-size: 18px;
         line-height: 196.5%;
         color: #FFFFFF;
+    }
+    #instagram{
+        transition: all .5s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+    #telegram{
+        transition: all .5s;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
 }
 .title{
@@ -200,6 +230,18 @@
     background: linear-gradient(180deg, #312521 0%, #443733 100%);
     display: flex;
     justify-content: space-between;
+    .instagram{
+        transition: all .5s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    #wa{
+        transition: all .5s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
     .footer-logo{
         margin: 33px 95px;
     }
