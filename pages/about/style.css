@@ -118,6 +118,14 @@ body {
           transform: scale(1.2);
 }
 
+.swiper-pagination-bullet-active {
+  background: #D9D9D9;
+}
+
+.swiper-pagination-bullet {
+  background: #758575;
+}
+
 .about-us {
   max-width: 85rem;
   height: 83rem;
@@ -135,6 +143,16 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 96px 95px 80px 95px;
+}
+
+.about-us .about-me .about-slider {
+  width: 35.625rem;
+  height: 54.625rem;
+}
+
+.about-us .about-me .about-slider img {
+  width: 35.625rem;
+  height: 54.625rem;
 }
 
 .about-us .about-me .description {
@@ -157,6 +175,10 @@ body {
   height: 3.125rem;
 }
 
+.about-us .about-me .description .text {
+  height: 27.188rem;
+}
+
 .about-us .about-me .description .text p {
   font-weight: 400;
   font-size: 1rem;
@@ -166,49 +188,6 @@ body {
 .about-us .about-me img {
   width: 25.625rem;
   height: 30rem;
-}
-
-.about-us .swiper {
-  width: 73.125rem;
-  height: 32.688rem;
-  padding-top: 95px;
-}
-
-.about-us .swiper .swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.about-us .swiper .swiper-slide img {
-  width: 25.625rem;
-  height: 30rem;
-}
-
-.about-us .swiper .description {
-  width: 35.625rem;
-  height: 27.188rem;
-  padding-right: 30px;
-}
-
-.about-us .swiper .description .name {
-  width: 18.313rem;
-  height: 3.813rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.about-us .swiper .description .name img {
-  padding-left: 30px;
-  width: 3.125rem;
-  height: 3.125rem;
-}
-
-.about-us .swiper .description .text p {
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 183.5%;
 }
 
 .about-us .contacts-container {
@@ -377,9 +356,9 @@ body {
 
 .map {
   max-width: 85rem;
-  height: 42.125rem;
+  height: 100%;
   background-color: #EEEAE4;
-  padding-top: 93px;
+  padding-top: 560px;
 }
 
 .map .address {

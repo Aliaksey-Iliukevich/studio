@@ -93,6 +93,16 @@ body{
     }
 }
 
+.swiper-pagination-bullet-active{
+    background: #D9D9D9;
+}
+
+.swiper-pagination-bullet{
+    background: #758575;
+}
+
+
+
 .about-us{
     max-width: 85rem;
     height: 83rem;
@@ -102,6 +112,14 @@ body{
         display: flex;
         justify-content: space-between;
         padding: 96px 95px 80px 95px;
+        .about-slider{
+            width: 35.625rem;
+            height: 54.625rem;
+            img{
+                width: 35.625rem;
+                height: 54.625rem;
+            }
+        }
         .description{
             width: 35.625rem;
             height: 27.188rem;
@@ -117,6 +135,7 @@ body{
                 }
             }
             .text{
+                height: 27.188rem;
                 p{
                     font-weight: 400;
                     font-size: 1rem;
@@ -129,42 +148,8 @@ body{
             height: 30rem;
         }
     }
-    .swiper{
-        width: 73.125rem;
-        height: 32.688rem;
-        padding-top: 95px;
-        .swiper-slide{
-            display: flex;
-            img{
-                width: 25.625rem;
-                height: 30rem;
-            }
-        }
-        .description{
-            width: 35.625rem;
-            height: 27.188rem;
-            padding-right: 30px;
-            .name{
-                width: 18.313rem;
-                height: 3.813rem;
-                display: flex;
-                img{
-                    padding-left: 30px;
-                    width: 3.125rem;
-                    height: 3.125rem;
-                }
-            }
-            .text{
-                p{
-                    font-weight: 400;
-                    font-size: 1rem;
-                    line-height: 183.5%;
-                }
-            }
-        }
-    
-    }
-.contacts-container{
+
+.contacts-container{ 
     max-width: 85rem;
     height: 32.813rem;
     display: flex;
@@ -295,9 +280,9 @@ body{
 
 .map{
     max-width: 85rem;
-    height: 42.125rem;
+    height: 100%;
     background-color: #EEEAE4;
-    padding-top: 93px;
+    padding-top: 560px;
     .address{
         width: 15rem;
         height: 3.813rem;

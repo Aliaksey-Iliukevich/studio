@@ -46,9 +46,25 @@ document.addEventListener('DOMContentLoaded', function() {
         service[1].classList.add('active');
       }
     })
+
+    const iconMenu = document.querySelector('.menu-icon');
+
+    if(iconMenu){
+      const menuBody = document.querySelector('.menu-body');
+      iconMenu.addEventListener("click", function(e) {
+        iconMenu.classList.toggle('__active');
+        menuBody.classList.toggle('__active');
+        document.body.classList.toggle('__lock');
+      });
+    }
 });
 
 const swiper = new Swiper('.swiper', {
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
     scrollbar: {
       el: '.swiper-scrollbar',
@@ -80,9 +96,14 @@ const swiper = new Swiper('.swiper', {
   });
 
   const swiper2 = new Swiper('.swiper2', {
-  
+ // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // And if we need scrollbar
     scrollbar: {
-      el: '.swiper2-scrollbar',
+      el: '.swiper-scrollbar',
     },
 
     keyboard: {
@@ -102,6 +123,31 @@ const swiper = new Swiper('.swiper', {
       firstSliderMessage: 'Первый слайд',
       lastSliderMessage: 'Последний слайд',
     }
+  });
+
+  const swiperr = new Swiper('.order-slider', {
+    
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyUnViewport: true,
+    pageUpDown: true
+  },
+  
+  mousewheel: {
+      sensitivity: 1
+  },
+
+  a11y: {
+    enabled: true,
+    prevSliderMessage: 'Предыдущий слайд',
+    nextSliderMessage: 'Следующий слайд',
+    firstSliderMessage: 'Первый слайд',
+    lastSliderMessage: 'Последний слайд',
+  }
   });
 
 
