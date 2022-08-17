@@ -76,8 +76,7 @@ const swiper = new Swiper('.swiper', {
 
     centeredSlides: true,
 
-    loop: true,
-    
+  
   });
 
   const swiper2 = new Swiper('.swiper2', {

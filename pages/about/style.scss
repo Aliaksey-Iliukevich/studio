@@ -1,28 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-html{
-    width: 85rem;
-    height: 100%;
-    margin: 0 auto;
-    overflow-x: hidden;
+body{
+    font-family: 'Montserrat';
+    font-style: normal;
 }
 
 .main-container{
-    width: 85rem;
+    max-width: 85rem;
     height: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .header{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 85rem;
+    max-width: 85rem;
     height: 5rem;
     background: linear-gradient(180deg, #312521 0%, #443733 100%);
     .logo{
         font-weight: 700;
-        font-size: 30px;
+        font-size: 1.875rem;
         line-height: 36px;
         color: #FFFFFF;
     }
@@ -38,7 +37,7 @@ html{
         li{
             a{
                 font-weight: 400;
-                font-size: 18px;
+                font-size: 1.125rem;
                 line-height: 22px;
                 color: rgba(255, 255, 255, 0.4);
                 position: relative;
@@ -75,7 +74,7 @@ html{
     }
     .tel{
         font-weight: 400;
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 196.5%;
         color: #FFFFFF;
     }
@@ -95,7 +94,7 @@ html{
 }
 
 .about-us{
-    width: 85rem;
+    max-width: 85rem;
     height: 83rem;
     justify-content: center;
     background-color: #EEEAE4;
@@ -120,7 +119,7 @@ html{
             .text{
                 p{
                     font-weight: 400;
-                    font-size: 16px;
+                    font-size: 1rem;
                     line-height: 183.5%;
                 }
             }
@@ -158,7 +157,7 @@ html{
             .text{
                 p{
                     font-weight: 400;
-                    font-size: 16px;
+                    font-size: 1rem;
                     line-height: 183.5%;
                 }
             }
@@ -166,7 +165,7 @@ html{
     
     }
 .contacts-container{
-    width: 85rem;
+    max-width: 85rem;
     height: 32.813rem;
     display: flex;
     align-items: center;
@@ -180,7 +179,7 @@ html{
         padding-left: 95px;
         h2{
             font-weight: 700;
-            font-size: 40px;
+            font-size: 2.5rem;
             line-height: 183%;
             margin: 0;
         }
@@ -205,7 +204,7 @@ html{
             }
             h6{
                 font-weight: 500;
-                font-size: 18px;
+                font-size: 1.125rem;
                 line-height: 22px;
                 padding: 30px 0 11px 0;
                 margin: 0;
@@ -225,7 +224,7 @@ html{
                 border-radius: 60px;
                 border: 0;
                 font-weight: 700;
-                font-size: 16px;
+                font-size: 1rem;
                 line-height: 20px;
                 color: #FFFFFF;
                 position: relative;
@@ -248,7 +247,7 @@ html{
             }
             p{
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 1rem;
                 line-height: 183%;
             }
 
@@ -262,7 +261,7 @@ html{
                 }
                 a{
                     font-weight: 500;
-                    font-size: 20px;
+                    font-size: 1.25rem;
                     line-height: 183%;
                     color: #000000;
                     text-decoration: none;
@@ -295,7 +294,7 @@ html{
 }
 
 .map{
-    width: 85rem;
+    max-width: 85rem;
     height: 42.125rem;
     background-color: #EEEAE4;
     padding-top: 93px;
@@ -321,7 +320,7 @@ html{
             width: 20.875rem;
             height: 1.375rem;
             font-weight: 700;
-            font-size: 18px;
+            font-size: 1.125rem;
             line-height: 22px;
             padding-right: 500px;
             padding-top: 28px;
@@ -334,7 +333,7 @@ html{
             padding-top: 28px;
             a{
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 1rem;
                 line-height: 20px;
                 color: #1995F0;
                 &:hover{
@@ -347,12 +346,13 @@ html{
     }
     .yandex-map{
         margin-top: 28px;
-        margin-left: 95px;
+        display: flex;
+        justify-content: center;
     }
 }
 
 .footer{
-    width: 85rem;
+    max-width: 85rem;
     height: 20.063rem;
     background: linear-gradient(180deg, #312521 0%, #443733 100%);
     display: flex;
@@ -395,7 +395,7 @@ html{
             align-items:stretch;
             padding-top: 82px;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 25px;
             color: #FFFFFF;
             .house{
@@ -417,7 +417,7 @@ html{
             padding-top: 83px;
             h6{
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 1rem;
                 line-height: 20px;
                 color: #FFFFFF;
                 margin: 0;
@@ -436,7 +436,7 @@ html{
             }
             #tel{
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 1rem;
                 line-height: 20px;
                 color: #FFFFFF;
                 text-decoration: none;
