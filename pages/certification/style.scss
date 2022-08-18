@@ -19,16 +19,207 @@ body{
     max-width: 85rem;
     height: 5rem;
     background: linear-gradient(180deg, #312521 0%, #443733 100%);
-    .logo{
-        font-weight: 700;
-        font-size: 1.875rem;
-        line-height: 36px;
-        color: #FFFFFF;
+    background-size: 100%;
+    .header-container{
+        width: 73.438rem;
+        height: 2.25rem;
+        display: flex;
+        .menu-body{
+            width: 73.438rem;
+            height: 2.25rem;
+            .menu-list{
+                width: 60rem;
+                height: 2rem;
+                display: flex;
+                align-items:center;
+                margin: 0;
+                padding-left: 40px;
+            }
+        }
+        .logo{
+            font-weight: 700;
+            font-size: 1.875rem;
+            line-height: 36px;
+            color: #FFFFFF;
+            margin: 0;
+            @media screen and (max-width: 767px) {
+                width: 9.438rem;
+                height: 1.875rem;
+                h2{
+                    margin-left: 30px;
+                }
+    
+            }
+            .burger-logo{
+                font-weight: 700;
+                font-size: 1.875rem;
+                line-height: 36px;
+                color: #FFFFFF;
+                margin: 0;
+                display: none;
+            }
+     
+        }
+        .header-menu{
+            display: flex;
+            width: 375px;
+            height: 812px;
+            .menu-icon{
+                display: none;
+            }
+            
+            @media screen and (max-width: 767px) {
+                .menu-icon{
+                    z-index: 6;
+                    display: block;
+                    position: relative;
+                    width: 30px;
+                    height: 22px;
+                    cursor: pointer;
+                    margin-left: 325px;
+                }
+                .menu-icon span,
+                .menu-icon::after,
+                .menu-icon::before{
+                    left: 0;
+                    position: absolute;
+                    width: 100%;
+                    height: 10%;
+                    transition: all .5s ease;
+                    background-color: #fff;
+                }
+            
+                .menu-icon::after,
+                .menu-icon::before{
+                    content: '';
+                }
+            
+                .menu-icon::before{
+                    top: 0;
+            
+                }
+            
+                .menu-icon::after{
+                    bottom: 0;
+                }
+            
+                .menu-icon span{
+                    top: 50%;
+                    transform: scale(1) translate(0px, -50%);
+                    
+                }
+                .burger-logo{
+                        display: block;
+                        width: 9.438rem;
+                        height: 1.563rem;
+                        font-weight: 700;
+                        z-index: 6;
+                        font-size: 1.875rem;
+                        line-height: 36px;
+                        color: #FFFFFF;
+                        border-bottom: none;
+                        h2{
+                            margin-left: 30px;
+                        }
+                }
+                .burger-logo-img{
+                    width: 26.063rem;
+                    height: 26.063rem;
+                    display: block;
+                    z-index: 20;
+                    position: absolute;
+                    top: 45%;
+                    right: 32%;
+                }
+                .menu-body{
+                    position: fixed;
+                    top: 0;
+                    left: 105px;
+                    z-index: 5;
+                    width: 375px;
+                    height: 812px;
+                    background-color: #443733;
+                    background-image:url('../../source/img/burger-logo-img.png');
+                    background-size: 26.063rem 26.063rem;
+                    background-repeat:no-repeat;
+                    background-position: bottom;
+                    background-position-x: -165px;
+                    transition: left .5s ease 0s;
+                    overflow: auto;
+                    .menu-list{
+                        width: 7.938rem;
+                        height: 15.938rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        margin: 35px 116px 0 0;
+                        li{
+                            margin-top: 30px;
+                            border-bottom: 1px solid #fff;
+                        }
+                        #about{
+                            width: 66px;
+                        }
+                    }
+                }
+                .menu-body.__active{
+                    left: 535px;
+                }
+                .burger-button{
+                    display: block;
+                }
+                .menu-icon.__active{
+                    .menu-icon::after{
+                        margin-left: 50px;
+                    }
+                }
+            }
+            .tel{
+                width: 11.063rem;
+                font-weight: 400;
+                font-size: 1.125rem;
+                line-height: 196.5%;
+                color: #FFFFFF;
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
+            }
+            .social{
+                width: 6.625rem;
+                display: flex;
+                justify-content: space-between;
+            }
+            #telegram{
+                transition: all .5s;
+                padding-bottom: 25px;
+                &:hover{
+                    transform: scale(1.2);
+                }
+                @media screen and (max-width: 767px) {
+                    width: 32px;
+                    height: 32px;
+                    text-decoration: none;
+                    img{
+                        padding-top: 45px;
+                    }
+                    
+                }
+            }
+        
+            #instagram{
+                @media screen and (max-width:767px) {
+                    width: 32px;
+                    height: 32px;
+                    padding-top: 48px;
+                }
+            }
+        }
     }
+
     a{
         text-decoration: none;
-
     }
+
     ul{
         list-style: none;
         width: 23.125rem;
@@ -59,39 +250,58 @@ body{
                     width: 100%;
                 }
             }
-        }
-        #certification{
-            color: #FFFFFF;
-            border-bottom: 1px solid #fff;
-            &:hover::after{
-                display: none;
+            #certification{
+                color:#FFFFFF;
+                border-bottom: 1px solid #fff;
             }
+        }
+        @media screen and (max-width: 1024px) {
+            width: 18.125rem;
         }
     }
     img{
         width: 2rem;
         height: 2rem;
     }
-    .tel{
-        font-weight: 400;
-        font-size: 1.125rem;
-        line-height: 196.5%;
-        color: #FFFFFF;
-    }
-    #instagram{
-        transition: all .5s;
-        &:hover{
-            transform: scale(1.2);
-        }
-    }
 
-    #telegram{
-        transition: all .5s;
-        &:hover{
-            transform: scale(1.2);
-        }
+    @media screen and (max-width: 1280px){
+        width: 79rem;
+    }
+    @media screen and (max-width: 1024px) {
+        max-width: 60.625rem;
+    }
+    @media screen and (max-width: 767px) {
+        max-width: 30rem;
+        width: 22rem;
     }
 }
+
+.burger-logo{
+    display: none;
+}
+
+.burger-button {
+        display: none;
+        width: 15.563rem;
+        height: 2.75rem;
+        margin-left: 38px;
+        margin-top: 410px;
+        background: #1995F0;
+        border-radius: 60px;
+        border: 0;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 20px;
+        color: #FFFFFF;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    &:active{
+        top: 3px;
+    }
+}
+
 section{
     max-width: 85rem;
     height: 83.438rem;
