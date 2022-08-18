@@ -841,6 +841,7 @@ hr {
   font-size: 1rem;
   line-height: 20px;
   color: #707070;
+  padding: 0 45px;
 }
 
 .service .order form .select-service option {
@@ -934,6 +935,14 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 95px;
+}
+
+.map .address h2 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.125rem;
+  line-height: 61px;
 }
 
 .map .address img {

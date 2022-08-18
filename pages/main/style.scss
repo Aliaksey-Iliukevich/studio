@@ -654,6 +654,7 @@ hr{
                 font-size: 1rem;
                 line-height: 20px;
                 color: #707070;
+                padding: 0 45px;
                 option{
                     width: 23.125rem;
                     height: 2.625rem;
@@ -727,6 +728,13 @@ hr{
         display: flex;
         align-items: center;
         padding-left: 95px;
+        h2{
+            margin: 0;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 3.125rem;
+            line-height: 61px;
+        }
         img{
             width: 35px;
             height: 35px;

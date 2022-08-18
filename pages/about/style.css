@@ -153,6 +153,7 @@ body {
 .about-us .about-me .about-slider img {
   width: 35.625rem;
   height: 54.625rem;
+  border-radius: 20px;
 }
 
 .about-us .about-me .description {
@@ -167,6 +168,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.about-us .about-me .description .name h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.125rem;
+  line-height: 61px;
+  margin: 0;
 }
 
 .about-us .about-me .description .name img {
@@ -205,6 +214,7 @@ body {
 .about-us .contacts-container #relax {
   width: 40.625rem;
   height: 36.813rem;
+  margin-left: 75px;
 }
 
 .about-us .contacts-container .contacts {
@@ -371,6 +381,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 95px;
+}
+
+.map .address h2 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.125rem;
+  line-height: 61px;
 }
 
 .map .address img {
