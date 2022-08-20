@@ -158,6 +158,32 @@
             </div>
         </footer>
     </div>
+    <div id="popup" class="popup">
+        <div class="popup-body">
+            <div class="popup-content">
+                <a href="#" class="popup-close close-popup"><img src="../../source/icons/popup-close.png" alt="закрыть модальное окно"></a>
+                <div class="popup-title">Запись на услугу</div>
+                <div class="popup-form">
+                    <form action="#" id="popup-form" class="form-body">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="number" name="age" placeholder="Ваш полный возраст" required>
+                        <input type="tel" name="phone" placeholder="+375 (XX)  XXX-XX-XX" required>
+                        <input type="text" name="count" placeholder="Кол-во сеансов" required>
+                        <select class="select-service" size="1" name="select" accesskey form>
+                            <option value="Вид услуги >">Вид услуги ></option>
+                            <option value="> Биометрическая терапия">> Биометрическая терапия</option>
+                            <option value="> Кинезио-терапия">> Кинезио-терапия</option>
+                            <option value="> Массаж">> Массаж</option>
+                            <option value="> Работа со шрамом">> Работа со шрамом</option>
+                            <option value="> Эмоциональная коррекция">> Эмоциональная коррекция</option>
+                            <option value="> Постановка Атланта">> Постановка Атланта</option>
+                        </select>
+                        <button class="submit" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>

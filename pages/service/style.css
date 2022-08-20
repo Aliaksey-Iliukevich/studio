@@ -5,6 +5,15 @@
   font-style: normal;
 }
 
+body {
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+
+body .lock {
+  overflow: hidden;
+}
+
 html {
   max-width: 85rem;
   height: 100%;
@@ -763,5 +772,189 @@ html {
   color: #FFFFFF;
   text-decoration: none;
   padding-top: 17px;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  -webkit-transform: translateY(-80%) scale(0);
+          transform: translateY(-80%) scale(0);
+}
+
+.popup.active {
+  background: #0000009a;
+  -webkit-transform: translate(0) scale(100%);
+          transform: translate(0) scale(100%);
+}
+
+.popup-body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 10px;
+}
+
+.popup-content {
+  background: #EEEAE4;
+  border-radius: 20px;
+  color: #000000;
+  max-width: 500px;
+  max-height: 452px;
+  padding: 50px 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  opacity: 1;
+}
+
+.popup-close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.popup-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.popup-form {
+  width: 23.5rem;
+  height: 24rem;
+  padding-top: 28px;
+}
+
+.popup-form input {
+  width: 20.125rem;
+  height: 2.625rem;
+  background: #FFFFFF;
+  border-radius: 60px;
+  margin-top: 15px;
+  padding: 0 25px;
+  border: 0;
+}
+
+.popup-form input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #707070;
+  padding: 11px 203px 11px 23px;
+}
+
+.popup-form input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #707070;
+  padding: 11px 203px 11px 23px;
+}
+
+.popup-form input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #707070;
+  padding: 11px 203px 11px 23px;
+}
+
+.popup-form input::placeholder {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #707070;
+  padding: 11px 203px 11px 23px;
+}
+
+.popup-form input:focus {
+  -webkit-box-shadow: 0 0 15px #6e6e6e;
+          box-shadow: 0 0 15px #6e6e6e;
+  outline: none;
+}
+
+.popup-form button {
+  width: 23.125rem;
+  height: 2.688rem;
+  margin: 38px 0;
+  background: #1995F0;
+  border-radius: 60px;
+  border: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #FFFFFF;
+  position: relative;
+  top: 0;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.popup-form button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.popup-form button:active {
+  top: 3px;
+  -webkit-box-shadow: 0 0 15px #6e6e6e;
+          box-shadow: 0 0 15px #6e6e6e;
+}
+
+.popup-form button:focus {
+  -webkit-box-shadow: 0 0 10px #6e6e6e;
+          box-shadow: 0 0 10px #6e6e6e;
+  outline: none;
+}
+
+.popup-form .select-service {
+  width: 23.125rem;
+  height: 2.625rem;
+  border-radius: 60px;
+  border: 0;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #707070;
+  padding: 0 45px;
+}
+
+.popup-form .select-service option {
+  width: 23.125rem;
+  height: 2.625rem;
+  border-radius: 60px;
 }
 /*# sourceMappingURL=style.css.map */

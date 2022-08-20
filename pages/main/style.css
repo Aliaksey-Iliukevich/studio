@@ -4,12 +4,12 @@ body {
   font-style: normal;
 }
 
-body.__lock {
+body.lock {
   overflow: hidden;
 }
 
 .main-container {
-  max-width: 85rem;
+  max-width: 86rem;
   height: 100%;
   margin: 0 auto;
   overflow-x: hidden;
@@ -748,7 +748,7 @@ hr {
 
 .service-container .service-container-item p {
   line-height: 163%;
-  width: 370px;
+  width: 327px;
 }
 
 .service-container .service-container-item .container-item-price {
@@ -969,7 +969,7 @@ hr {
   outline: none;
 }
 
-.service .order form #submit {
+.service .order form .submit {
   width: 23.125rem;
   height: 2.688rem;
   margin: 38px 0;
@@ -986,19 +986,19 @@ hr {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.service .order form #submit:hover {
+.service .order form .submit:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.service .order form #submit:active {
+.service .order form .submit:active {
   top: 3px;
   -webkit-box-shadow: 0 0 15px #6e6e6e;
           box-shadow: 0 0 15px #6e6e6e;
 }
 
-.service .order form #submit:focus {
+.service .order form .submit:focus {
   -webkit-box-shadow: 0 0 10px #6e6e6e;
           box-shadow: 0 0 10px #6e6e6e;
   outline: none;
@@ -1371,27 +1371,22 @@ hr {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: #00000077;
+  background: transparent;
   top: 0;
   left: 0;
   z-index: 100;
-  opacity: 0;
-  visibility: hidden;
-  overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-transition: all .6s ease;
-  transition: all .6s ease;
-}
-
-.popup.open {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  -webkit-transform: translateY(-80%) scale(0);
+          transform: translateY(-80%) scale(0);
 }
 
-.popup.open .popup-content {
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-  opacity: 1;
+.popup.active {
+  background: #0000009a;
+  -webkit-transform: translate(0) scale(100%);
+          transform: translate(0) scale(100%);
 }
 
 .popup-body {
@@ -1431,9 +1426,7 @@ hr {
   position: relative;
   -webkit-transition: all .6s ease;
   transition: all .6s ease;
-  opacity: 0;
-  -webkit-transform: translate(0px, -100%);
-          transform: translate(0px, -100%);
+  opacity: 1;
 }
 
 .popup-close {

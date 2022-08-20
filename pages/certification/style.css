@@ -594,7 +594,7 @@ section {
   outline: none;
 }
 
-.content form #submit {
+.content form .submit {
   width: 23.125rem;
   height: 2.688rem;
   margin: 38px 0;
@@ -613,13 +613,13 @@ section {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.content form #submit:hover {
+.content form .submit:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.content form #submit:active {
+.content form .submit:active {
   top: 3px;
 }
 

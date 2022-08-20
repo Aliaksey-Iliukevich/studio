@@ -5,12 +5,12 @@ body{
     font-style: normal;
 }
 
-body.__lock{
+body.lock{
     overflow: hidden;
 }
 
 .main-container{
-    max-width: 85rem;
+    max-width: 86rem;
     height: 100%;
     margin: 0 auto;
     overflow-x: hidden;
@@ -573,7 +573,7 @@ hr{
         }
         p{
             line-height: 163%;
-            width: 370px;
+            width: 327px;
         }
         .container-item-price{
             width: 10.313rem;
@@ -731,7 +731,7 @@ hr{
                     outline: none;
                 }
             }
-            #submit{
+            .submit{
                 width: 23.125rem;
                 height: 2.688rem;
                 margin: 38px 0;
@@ -1025,28 +1025,24 @@ hr{
 
 
 .popup{
+
     position: fixed;
     width: 100%;
     height: 100%;
-    background: #00000077;
+    background: transparent;
     top: 0;
     left: 0;
     z-index: 100;
-    opacity: 0;
-    visibility: hidden;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transition: all .6s ease;
-}
-
-.popup.open{
     opacity: 1;
     visibility: visible;
+    transition: all .8s ease;
+    transform: translateY(-80%) scale(0);
 }
 
-.popup.open .popup-content{
-    transform: translate(0px, 0px);
-    opacity: 1;
+.popup.active{
+
+    background: #0000009a;
+    transform: translate(0) scale(100%);
 }
 
 .popup-body{
@@ -1070,8 +1066,7 @@ hr{
     flex-direction: column;
     position: relative;
     transition: all .6s ease;
-    opacity: 0;
-    transform: translate(0px, -100%);
+    opacity: 1;
 }
 
 .popup-close{

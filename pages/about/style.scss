@@ -5,6 +5,10 @@ body{
     font-style: normal;
 }
 
+body.lock{
+    overflow: hidden;
+}
+
 .main-container{
     max-width: 85rem;
     height: 100%;
@@ -701,4 +705,135 @@ body{
         }
     }
   
+}
+
+
+
+
+
+.popup{
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 1;
+    visibility: visible;
+    transition: all .8s ease;
+    transform: translateY(-80%) scale(0);
+}
+
+.popup.active{
+
+    background: #0000009a;
+    transform: translate(0) scale(100%);
+}
+
+.popup-body{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.popup-content{
+    background: #EEEAE4;
+    border-radius: 20px;
+    color: #000000;
+    max-width: 500px;
+    max-height: 452px;
+    padding: 50px 65px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transition: all .6s ease;
+    opacity: 1;
+}
+
+.popup-close{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+
+.popup-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.popup-form{
+    width: 23.5rem;
+    height: 24rem;
+    padding-top: 28px;
+    input{
+        width: 20.125rem;
+        height: 2.625rem;
+        background: #FFFFFF;
+        border-radius: 60px;
+        margin-top: 15px;
+        padding: 0 25px;
+        border: 0;
+        &::placeholder{
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 20px;
+            color: #707070;
+            padding: 11px 203px 11px 23px;
+        }
+        &:focus{
+            box-shadow: 0 0 15px #6e6e6e;
+            outline: none;
+        }
+    }
+    button{
+        width: 23.125rem;
+        height: 2.688rem;
+        margin: 38px 0;
+        background: #1995F0;
+        border-radius: 60px;
+        border: 0;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 20px;
+        color: #FFFFFF;
+        position: relative;
+        top: 0;
+        transition: transform 0.3s;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        &:active{
+            top: 3px;
+            box-shadow: 0 0 15px #6e6e6e;
+        }
+        &:focus{
+            box-shadow: 0 0 10px #6e6e6e;
+            outline: none;
+        }
+    }
+    .select-service{
+        width: 23.125rem;
+        height: 2.625rem;
+        border-radius: 60px;
+        border: 0;
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 20px;
+        color: #707070;
+        padding: 0 45px;
+        option{
+            width: 23.125rem;
+            height: 2.625rem;
+            border-radius: 60px;
+        }
+    }
 }

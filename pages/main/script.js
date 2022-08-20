@@ -58,10 +58,28 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
 
-    const popupLinks = document.querySelectorAll('.popup-link');
+    const openPopup = document.getElementsByClassName('popup-link');
+    console.log(openPopup)
+    const closePopup = document.getElementsByClassName('close-popup');
+    const popup = document.getElementById('popup');
+    const submit = document.getElementsByClassName('submit');
+    
 
-    if(popupLinks.length > 0) {
-      
+
+    for(let i= 0; i < openPopup.length; i++){
+      openPopup[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        popup.classList.add('active');
+        document.body.classList.add('lock');
+      });
+    }
+
+    for(let i = 0; i < openPopup.length; i++) {
+      closePopup[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        popup.classList.remove('active');
+        document.body.classList.remove('lock');
+      });
     }
 
 });
