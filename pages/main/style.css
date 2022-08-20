@@ -77,7 +77,20 @@ body.__lock {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  padding-left: 40px;
+  padding: 0;
+}
+
+.header .header-container .menu-body .menu-list .menu-nav {
+  width: 23.125rem;
+  height: 1.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 119px;
+  padding-top: 8px;
 }
 
 .header .header-container .logo {
@@ -237,6 +250,7 @@ body.__lock {
   font-size: 1.125rem;
   line-height: 196.5%;
   color: #FFFFFF;
+  padding-top: 8px;
 }
 
 @media screen and (max-width: 767px) {
@@ -590,6 +604,7 @@ hr {
 .about-desciption .subtitle button {
   width: 15.563rem;
   height: 2.75rem;
+  margin-top: 40px;
   background: #1995F0;
   border-radius: 60px;
   border: 0;
@@ -725,12 +740,32 @@ hr {
   margin-right: 60px;
 }
 
+.service-container .service-container-item h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.service-container .service-container-item p {
+  line-height: 163%;
+  width: 370px;
+}
+
 .service-container .service-container-item .container-item-price {
   width: 10.313rem;
 }
 
-.service-container .service-container-item .container-item-price span {
+.service-container .service-container-item .container-item-price pre {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.service-container .service-container-item .container-item-price pre span {
   padding-right: 25px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .more-info {
@@ -738,7 +773,7 @@ hr {
   font-size: 1rem;
   line-height: 20px;
   color: #1995F0;
-  margin-left: 667px;
+  margin-left: 610px;
 }
 
 .more-info:hover {
@@ -791,7 +826,7 @@ hr {
   font-size: 1rem;
   line-height: 20px;
   color: #FFFFFF;
-  margin-top: 48px;
+  margin-top: 93px;
   margin-left: 95px;
   position: relative;
   top: 0;
@@ -866,6 +901,9 @@ hr {
   color: #606060;
   border: 0;
   margin: 0 7px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .service .order .order-choice .active {
@@ -889,7 +927,7 @@ hr {
   background: #FFFFFF;
   border-radius: 60px;
   margin-top: 15px;
-  padding: 0 25px;
+  padding: 0 15px;
   border: 0;
 }
 
@@ -967,7 +1005,7 @@ hr {
 }
 
 .service .order form .select-service {
-  width: 23.125rem;
+  width: 22rem;
   height: 2.625rem;
   border-radius: 60px;
   border: 0;
@@ -976,7 +1014,7 @@ hr {
   font-size: 1rem;
   line-height: 20px;
   color: #707070;
-  padding: 0 45px;
+  padding: 0 35px;
 }
 
 .service .order form .select-service option {
@@ -1104,7 +1142,7 @@ hr {
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 22px;
-  padding-right: 500px;
+  padding-right: 614px;
   padding-top: 28px;
 }
 
@@ -1118,8 +1156,9 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 14.938rem;
   height: 1.375rem;
   padding-top: 28px;
@@ -1211,6 +1250,12 @@ hr {
   display: flex;
 }
 
+.footer .house span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+
 .footer img {
   width: 18.688rem;
   height: 15.938rem;
@@ -1227,8 +1272,10 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 38.375rem;
+  width: 40rem;
   height: 8.125rem;
+  padding-top: 83px;
+  padding-right: 95px;
 }
 
 .footer .contact-us .come {
@@ -1244,18 +1291,28 @@ hr {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  padding-top: 82px;
   font-weight: 400;
   font-size: 1rem;
   line-height: 25px;
+  padding-right: 128px;
   color: #FFFFFF;
 }
 
+.footer .contact-us .come .footer-address {
+  width: 20.938rem;
+  height: 2rem;
+}
+
 .footer .contact-us .come .house {
-  padding-top: 15px;
+  width: 21.938rem;
+  height: 3.125rem;
+  margin-top: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 .footer .contact-us .come .house pre {
@@ -1272,7 +1329,8 @@ hr {
 }
 
 .footer .contact-us .call {
-  padding-top: 83px;
+  width: 10.5rem;
+  height: 7.5rem;
 }
 
 .footer .contact-us .call h6 {
@@ -1307,5 +1365,196 @@ hr {
   color: #FFFFFF;
   text-decoration: none;
   padding-top: 17px;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #00000077;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup.open .popup-content {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.popup-body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 10px;
+}
+
+.popup-content {
+  background: #EEEAE4;
+  border-radius: 20px;
+  color: #000000;
+  max-width: 500px;
+  max-height: 452px;
+  padding: 50px 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  opacity: 0;
+  -webkit-transform: translate(0px, -100%);
+          transform: translate(0px, -100%);
+}
+
+.popup-close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.popup-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.popup-form {
+  width: 23.5rem;
+  height: 24rem;
+  padding-top: 28px;
+}
+
+.popup-form input {
+  width: 20.125rem;
+  height: 2.625rem;
+  background: #FFFFFF;
+  border-radius: 60px;
+  margin-top: 15px;
+  padding: 0 25px;
+  border: 0;
+}
+
+.popup-form input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #707070;
+  padding: 11px 203px 11px 23px;
+}
+
+.popup-form input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #707070;
+  padding: 11px 203px 11px 23px;
+}
+
+.popup-form input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #707070;
+  padding: 11px 203px 11px 23px;
+}
+
+.popup-form input::placeholder {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #707070;
+  padding: 11px 203px 11px 23px;
+}
+
+.popup-form input:focus {
+  -webkit-box-shadow: 0 0 15px #6e6e6e;
+          box-shadow: 0 0 15px #6e6e6e;
+  outline: none;
+}
+
+.popup-form button {
+  width: 23.125rem;
+  height: 2.688rem;
+  margin: 38px 0;
+  background: #1995F0;
+  border-radius: 60px;
+  border: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #FFFFFF;
+  position: relative;
+  top: 0;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.popup-form button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.popup-form button:active {
+  top: 3px;
+  -webkit-box-shadow: 0 0 15px #6e6e6e;
+          box-shadow: 0 0 15px #6e6e6e;
+}
+
+.popup-form button:focus {
+  -webkit-box-shadow: 0 0 10px #6e6e6e;
+          box-shadow: 0 0 10px #6e6e6e;
+  outline: none;
+}
+
+.popup-form .select-service {
+  width: 23.125rem;
+  height: 2.625rem;
+  border-radius: 60px;
+  border: 0;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #707070;
+  padding: 0 45px;
+}
+
+.popup-form .select-service option {
+  width: 23.125rem;
+  height: 2.625rem;
+  border-radius: 60px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -32,6 +32,9 @@ html{
         width: 73.438rem;
         height: 2.25rem;
         display: flex;
+        .header-container-link{
+            display: none;
+        }
         .menu-body{
             width: 73.438rem;
             height: 2.25rem;
@@ -41,7 +44,15 @@ html{
                 display: flex;
                 align-items:center;
                 margin: 0;
-                padding-left: 40px;
+                padding: 0;
+                .menu-nav{
+                    width: 23.125rem;
+                    height: 1.375rem;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 119px;
+                    padding-top: 8px;
+                }
             }
         }
         .logo{
@@ -84,7 +95,8 @@ html{
                     width: 30px;
                     height: 22px;
                     cursor: pointer;
-                    margin-left: 325px;
+                    margin-left: 23px;
+                    margin-top: 7px;
                 }
                 .menu-icon span,
                 .menu-icon::after,
@@ -126,6 +138,7 @@ html{
                         line-height: 36px;
                         color: #FFFFFF;
                         border-bottom: none;
+                        margin: 25px 60px 10px 40px;
                         h2{
                             margin-left: 30px;
                         }
@@ -142,16 +155,17 @@ html{
                 .menu-body{
                     position: fixed;
                     top: 0;
-                    left: 105px;
+                    left: 535px;
                     z-index: 5;
-                    width: 375px;
+                    width: 480px;
                     height: 812px;
                     background-color: #443733;
                     background-image:url('../../source/img/burger-logo-img.png');
-                    background-size: 26.063rem 26.063rem;
+                    background-size: 15rem 23rem;
                     background-repeat:no-repeat;
                     background-position: bottom;
-                    background-position-x: -165px;
+                    background-position-x: 2px;
+                    background-position-y: 415px;
                     transition: left .5s ease 0s;
                     overflow: auto;
                     .menu-list{
@@ -171,15 +185,13 @@ html{
                     }
                 }
                 .menu-body.__active{
-                    left: 535px;
+                    left: 3px;
                 }
                 .burger-button{
                     display: block;
                 }
-                .menu-icon.__active{
-                    .menu-icon::after{
-                        margin-left: 50px;
-                    }
+                .menu-icon.__active::after{
+                    margin-left: -7px;
                 }
             }
             .tel{
@@ -188,6 +200,7 @@ html{
                 font-size: 1.125rem;
                 line-height: 196.5%;
                 color: #FFFFFF;
+                padding-top: 8px;
                 @media screen and (max-width: 767px) {
                     display: none;
                 }
@@ -221,6 +234,10 @@ html{
                     padding-top: 48px;
                 }
             }
+        }
+        @media screen and (max-width: 767px) {
+            width: 20.313rem;
+            height: 1.875rem;
         }
     }
 
@@ -259,8 +276,7 @@ html{
                 }
             }
             #service{
-                color:#FFFFFF;
-                border-bottom: 1px solid #fff;
+                color: #fff;
             }
         }
         @media screen and (max-width: 1024px) {
@@ -280,7 +296,14 @@ html{
     }
     @media screen and (max-width: 767px) {
         max-width: 30rem;
-        width: 22rem;
+        width: 30rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items:center;
+        .header-container-link{
+            display: block;
+            padding-left: 215px;
+        }
     }
 }
 
@@ -477,30 +500,49 @@ html{
     }
     .house{
         display: flex;
+        span{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+        }
     }
     img{
         width: 18.688rem;
         height: 15.938rem;
+        @media screen and (max-width: 1024px) {
+            width: 14.688rem;
+            height: 13.938rem;
+        }
     }
     .contact-us{
         display: flex;
-        width: 38.375rem;
+        width: 40rem;
         height: 8.125rem;
-
+        padding-top: 83px;
+        padding-right: 95px;
         .come{
             width: 22.938rem;
             height: 5.938rem;
             display: flex;
             flex-direction: column;
             align-items:stretch;
-            padding-top: 82px;
             font-weight: 400;
             font-size: 1rem;
             line-height: 25px;
+            padding-right: 128px;
             color: #FFFFFF;
+            .footer-address{
+                width: 20.938rem;
+                height: 2rem;
+            }
             .house{
-                padding-top: 15px;
+                width: 21.938rem;
+                height: 3.125rem;
+                margin-top: 15px;
                 align-items:center;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 25px;
                 pre{
                     margin: 0;
                 }
@@ -514,7 +556,8 @@ html{
             }
         }
         .call{
-            padding-top: 83px;
+            width: 10.5rem;
+            height: 7.5rem;
             h6{
                 font-weight: 400;
                 font-size: 1rem;
@@ -540,10 +583,9 @@ html{
                 line-height: 20px;
                 color: #FFFFFF;
                 text-decoration: none;
+                padding-top: 17px;
             }
         }
     }
   
 }
-
-

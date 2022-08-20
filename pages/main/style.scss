@@ -49,7 +49,15 @@ body.__lock{
                 display: flex;
                 align-items:center;
                 margin: 0;
-                padding-left: 40px;
+                padding: 0;
+                .menu-nav{
+                    width: 23.125rem;
+                    height: 1.375rem;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 119px;
+                    padding-top: 8px;
+                }
             }
         }
         .logo{
@@ -197,6 +205,7 @@ body.__lock{
                 font-size: 1.125rem;
                 line-height: 196.5%;
                 color: #FFFFFF;
+                padding-top: 8px;
                 @media screen and (max-width: 767px) {
                     display: none;
                 }
@@ -457,6 +466,7 @@ hr{
         button{
             width: 15.563rem;
             height: 2.75rem;
+            margin-top: 40px;
             background: #1995F0;
             border-radius: 60px;
             border: 0;
@@ -556,10 +566,27 @@ hr{
     .service-container-item{
         width: 21.313rem;
         margin-right: 60px;
+        h4{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        p{
+            line-height: 163%;
+            width: 370px;
+        }
         .container-item-price{
             width: 10.313rem;
-            span{
-                padding-right: 25px;
+            pre{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                span{
+                    padding-right: 25px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
             }
         }
     }
@@ -571,7 +598,7 @@ hr{
     font-size: 1rem;
     line-height: 20px;
     color: #1995F0;
-    margin-left: 667px;
+    margin-left: 610px;
     &:hover{
         color: #176ba7;
         text-decoration: none;
@@ -613,7 +640,7 @@ hr{
         font-size: 1rem;
         line-height: 20px;
         color: #FFFFFF;
-        margin-top: 48px;
+        margin-top: 93px;
         margin-left: 95px;
         position: relative;
         top: 0;
@@ -668,6 +695,9 @@ hr{
                 color: #606060;
                 border: 0;
                 margin: 0 7px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
             }
             .active{
                 font-weight: 500;
@@ -687,7 +717,7 @@ hr{
                 background: #FFFFFF;
                 border-radius: 60px;
                 margin-top: 15px;
-                padding: 0 25px;
+                padding: 0 15px;
                 border: 0;
                 &::placeholder{
                     font-weight: 400;
@@ -727,7 +757,7 @@ hr{
                 }
             }
             .select-service{
-                width: 23.125rem;
+                width: 22rem;
                 height: 2.625rem;
                 border-radius: 60px;
                 border: 0;
@@ -736,7 +766,7 @@ hr{
                 font-size: 1rem;
                 line-height: 20px;
                 color: #707070;
-                padding: 0 45px;
+                padding: 0 35px;
                 option{
                     width: 23.125rem;
                     height: 2.625rem;
@@ -835,7 +865,7 @@ hr{
             font-weight: 700;
             font-size: 1.125rem;
             line-height: 22px;
-            padding-right: 500px;
+            padding-right: 614px;
             padding-top: 28px;
             @media screen and (max-width: 1024px){
                 padding-right: 220px;
@@ -843,10 +873,11 @@ hr{
         }
         .contacts-links{
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             width: 14.938rem;
             height: 1.375rem;
             padding-top: 28px;
+            // padding-left: 135px;
             a{
                 font-weight: 400;
                 font-size: 1rem;
@@ -901,6 +932,11 @@ hr{
     }
     .house{
         display: flex;
+        span{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+        }
     }
     img{
         width: 18.688rem;
@@ -912,23 +948,33 @@ hr{
     }
     .contact-us{
         display: flex;
-        width: 38.375rem;
+        width: 40rem;
         height: 8.125rem;
-
+        padding-top: 83px;
+        padding-right: 95px;
         .come{
             width: 22.938rem;
             height: 5.938rem;
             display: flex;
             flex-direction: column;
             align-items:stretch;
-            padding-top: 82px;
             font-weight: 400;
             font-size: 1rem;
             line-height: 25px;
+            padding-right: 128px;
             color: #FFFFFF;
+            .footer-address{
+                width: 20.938rem;
+                height: 2rem;
+            }
             .house{
-                padding-top: 15px;
+                width: 21.938rem;
+                height: 3.125rem;
+                margin-top: 15px;
                 align-items:center;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 25px;
                 pre{
                     margin: 0;
                 }
@@ -942,7 +988,8 @@ hr{
             }
         }
         .call{
-            padding-top: 83px;
+            width: 10.5rem;
+            height: 7.5rem;
             h6{
                 font-weight: 400;
                 font-size: 1rem;
@@ -975,6 +1022,137 @@ hr{
   
 }
 
-// @media screen and (max-width: 1200) {
-    
-// }
+
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #00000077;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all .6s ease;
+}
+
+.popup.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup.open .popup-content{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.popup-body{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.popup-content{
+    background: #EEEAE4;
+    border-radius: 20px;
+    color: #000000;
+    max-width: 500px;
+    max-height: 452px;
+    padding: 50px 65px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transition: all .6s ease;
+    opacity: 0;
+    transform: translate(0px, -100%);
+}
+
+.popup-close{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+
+.popup-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.popup-form{
+    width: 23.5rem;
+    height: 24rem;
+    padding-top: 28px;
+    input{
+        width: 20.125rem;
+        height: 2.625rem;
+        background: #FFFFFF;
+        border-radius: 60px;
+        margin-top: 15px;
+        padding: 0 25px;
+        border: 0;
+        &::placeholder{
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 20px;
+            color: #707070;
+            padding: 11px 203px 11px 23px;
+        }
+        &:focus{
+            box-shadow: 0 0 15px #6e6e6e;
+            outline: none;
+        }
+    }
+    button{
+        width: 23.125rem;
+        height: 2.688rem;
+        margin: 38px 0;
+        background: #1995F0;
+        border-radius: 60px;
+        border: 0;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 20px;
+        color: #FFFFFF;
+        position: relative;
+        top: 0;
+        transition: transform 0.3s;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        &:active{
+            top: 3px;
+            box-shadow: 0 0 15px #6e6e6e;
+        }
+        &:focus{
+            box-shadow: 0 0 10px #6e6e6e;
+            outline: none;
+        }
+    }
+    .select-service{
+        width: 23.125rem;
+        height: 2.625rem;
+        border-radius: 60px;
+        border: 0;
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 20px;
+        color: #707070;
+        padding: 0 45px;
+        option{
+            width: 23.125rem;
+            height: 2.625rem;
+            border-radius: 60px;
+        }
+    }
+}
+

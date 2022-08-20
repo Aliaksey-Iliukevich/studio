@@ -57,6 +57,13 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.toggle('__lock');
       });
     }
+
+    const popupLinks = document.querySelectorAll('.popup-link');
+
+    if(popupLinks.length > 0) {
+      
+    }
+
 });
 
 const swiper = new Swiper('.swiper', {

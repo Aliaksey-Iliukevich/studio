@@ -24,6 +24,9 @@ body{
         width: 73.438rem;
         height: 2.25rem;
         display: flex;
+        .header-container-link{
+            display: none;
+        }
         .menu-body{
             width: 73.438rem;
             height: 2.25rem;
@@ -33,7 +36,15 @@ body{
                 display: flex;
                 align-items:center;
                 margin: 0;
-                padding-left: 40px;
+                padding: 0;
+                .menu-nav{
+                    width: 23.125rem;
+                    height: 1.375rem;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 119px;
+                    padding-top: 8px;
+                }
             }
         }
         .logo{
@@ -76,7 +87,8 @@ body{
                     width: 30px;
                     height: 22px;
                     cursor: pointer;
-                    margin-left: 325px;
+                    margin-left: 23px;
+                    margin-top: 7px;
                 }
                 .menu-icon span,
                 .menu-icon::after,
@@ -118,6 +130,7 @@ body{
                         line-height: 36px;
                         color: #FFFFFF;
                         border-bottom: none;
+                        margin: 25px 60px 10px 40px;
                         h2{
                             margin-left: 30px;
                         }
@@ -134,16 +147,17 @@ body{
                 .menu-body{
                     position: fixed;
                     top: 0;
-                    left: 105px;
+                    left: 535px;
                     z-index: 5;
-                    width: 375px;
+                    width: 480px;
                     height: 812px;
                     background-color: #443733;
                     background-image:url('../../source/img/burger-logo-img.png');
-                    background-size: 26.063rem 26.063rem;
+                    background-size: 15rem 23rem;
                     background-repeat:no-repeat;
                     background-position: bottom;
-                    background-position-x: -165px;
+                    background-position-x: 2px;
+                    background-position-y: 415px;
                     transition: left .5s ease 0s;
                     overflow: auto;
                     .menu-list{
@@ -163,15 +177,13 @@ body{
                     }
                 }
                 .menu-body.__active{
-                    left: 535px;
+                    left: 3px;
                 }
                 .burger-button{
                     display: block;
                 }
-                .menu-icon.__active{
-                    .menu-icon::after{
-                        margin-left: 50px;
-                    }
+                .menu-icon.__active::after{
+                    margin-left: -7px;
                 }
             }
             .tel{
@@ -180,6 +192,7 @@ body{
                 font-size: 1.125rem;
                 line-height: 196.5%;
                 color: #FFFFFF;
+                padding-top: 8px;
                 @media screen and (max-width: 767px) {
                     display: none;
                 }
@@ -213,6 +226,10 @@ body{
                     padding-top: 48px;
                 }
             }
+        }
+        @media screen and (max-width: 767px) {
+            width: 20.313rem;
+            height: 1.875rem;
         }
     }
 
@@ -251,8 +268,7 @@ body{
                 }
             }
             #about{
-                color:#FFFFFF;
-                border-bottom: 1px solid #fff;
+                color: #fff;
             }
         }
         @media screen and (max-width: 1024px) {
@@ -272,7 +288,14 @@ body{
     }
     @media screen and (max-width: 767px) {
         max-width: 30rem;
-        width: 22rem;
+        width: 30rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items:center;
+        .header-container-link{
+            display: block;
+            padding-left: 215px;
+        }
     }
 }
 
@@ -359,11 +382,80 @@ body{
                     line-height: 183.5%;
                 }
             }
+            .contacts{
+                padding-top: 100px;
+                h2{
+                    font-weight: 700;
+                    font-size: 2.5rem;
+                    line-height: 183%;
+                    margin: 0;
+                }
+                .sub-title{
+                    width: 17.5rem;
+                    height: 3.125rem;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        padding-left: 30px;
+                    }
+                }
+                .info{
+                    .phone{
+                        display: flex;
+                        align-items: center;
+                        img{
+                            padding-right: 5px;
+                            width: 1.063rem;
+                            height: 1.75rem;
+                        }
+                    }
+                    h6{
+                        font-weight: 500;
+                        font-size: 1.125rem;
+                        line-height: 22px;
+                        padding: 30px 0 11px 0;
+                        margin: 0;
+                    }
+                    ul{
+                        padding: 15px 0;
+                        margin: 0;
+                        li{
+                            list-style: none;
+                            padding-top: 10px;
+                        }
+                    }
+                    button{
+                        width: 15.563rem;
+                        height: 2.75rem;
+                        margin-top: 47px;
+                        background: #1995F0;
+                        border-radius: 60px;
+                        border: 0;
+                        font-weight: 700;
+                        font-size: 1rem;
+                        line-height: 20px;
+                        color: #FFFFFF;
+                        position: relative;
+                        top: 0;
+                        transition: transform 0.3s;
+                        &:hover{
+                            cursor: pointer;
+                            transform: scale(1.1);
+                        }
+                        &:active{
+                            top: 3px;
+                        }
+                    }
+                }
+            }
         }
         img{
             width: 25.625rem;
             height: 30rem;
         }
+        
     }
 
 .contacts-container{ 
@@ -371,126 +463,60 @@ body{
     height: 32.813rem;
     display: flex;
     align-items: center;
-    padding-top: 80px;
-    #relax{
-        width: 40.625rem;
-        height: 36.813rem;
-        margin-left: 75px;
-    }
-    .contacts{
-        padding-top: 80px;
-        padding-left: 95px;
+    margin: 0 95px;
+    .insta{
+        width: 32.813rem;
+        height: 11.375;
         h2{
-            font-weight: 700;
-            font-size: 2.5rem;
-            line-height: 183%;
             margin: 0;
         }
-        .sub-title{
-            width: 17.5rem;
-            height: 3.125rem;
+        p{
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 183%;
+        }
+
+        .insta-link{
+            width: 23.125rem;
+            height: 5rem;
             display: flex;
             align-items: center;
             img{
-                width: 2.5rem;
-                height: 2.5rem;
-                padding-left: 30px;
+                padding-left: 72px;
             }
-        }
-        .info{
-            .phone{
-                display: flex;
-                align-items: center;
-                img{
-                    padding-right: 5px;
-                }
-            }
-            h6{
+            a{
                 font-weight: 500;
-                font-size: 1.125rem;
-                line-height: 22px;
-                padding: 30px 0 11px 0;
-                margin: 0;
-            }
-            ul{
-                padding: 15px 0;
-                margin: 0;
-                li{
-                    list-style: none;
-                    padding-top: 10px;
-                }
-            }
-            button{
-                width: 15.563rem;
-                height: 2.75rem;
-                background: #1995F0;
-                border-radius: 60px;
-                border: 0;
-                font-weight: 700;
-                font-size: 1rem;
-                line-height: 20px;
-                color: #FFFFFF;
-                position: relative;
-                top: 0;
-                transition: transform 0.3s;
-                &:hover{
-                    cursor: pointer;
-                    transform: scale(1.1);
-                }
-                &:active{
-                    top: 3px;
-                }
-            }
-        }
-        .insta{
-            width: 32.813rem;
-            height: 11.375;
-            h2{
-                padding-top: 92px;
-            }
-            p{
-                font-weight: 400;
-                font-size: 1rem;
+                font-size: 1.25rem;
                 line-height: 183%;
+                color: #000000;
+                text-decoration: none;
+                position: relative;
+                &:hover{
+                    color:#000000;
+                }
             }
-
-            .insta-link{
-                width: 23.125rem;
-                height: 5rem;
-                display: flex;
-                align-items: center;
-                img{
-                    padding-left: 72px;
+            #link{
+                &:after {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    width: 0;
+                    height: 1px;
+                    background-color: #000000;
+                    content: "";
+                    transition: width 0.5s;
                 }
-                a{
-                    font-weight: 500;
-                    font-size: 1.25rem;
-                    line-height: 183%;
-                    color: #000000;
-                    text-decoration: none;
-                    position: relative;
-                    &:hover{
-                        color:#000000;
-                    }
-                }
-                #link{
-                    &:after {
-                        display: block;
-                        position: absolute;
-                        left: 0;
-                        width: 0;
-                        height: 1px;
-                        background-color: #000000;
-                        content: "";
-                        transition: width 0.5s;
-                    }
-                    &:hover:after,
-                    &:focus:after {
-                        width: 100%;
-                    }
+                &:hover:after,
+                &:focus:after {
+                    width: 100%;
                 }
             }
         }
+    }
+    #relax{
+        width: 35.625rem;
+        height: 26.5rem;
+        margin-left: 75px;
     }
 }
     
@@ -500,7 +526,7 @@ body{
     max-width: 85rem;
     height: 100%;
     background-color: #EEEAE4;
-    padding-top: 560px;
+    padding-top: 253px;
     .address{
         width: 15rem;
         height: 3.813rem;
@@ -532,7 +558,7 @@ body{
             font-weight: 700;
             font-size: 1.125rem;
             line-height: 22px;
-            padding-right: 500px;
+            padding-right: 614px;
             padding-top: 28px;
         }
         .contacts-links{
@@ -587,30 +613,49 @@ body{
     }
     .house{
         display: flex;
+        span{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+        }
     }
     img{
         width: 18.688rem;
         height: 15.938rem;
+        @media screen and (max-width: 1024px) {
+            width: 14.688rem;
+            height: 13.938rem;
+        }
     }
     .contact-us{
         display: flex;
-        width: 38.375rem;
+        width: 40rem;
         height: 8.125rem;
-
+        padding-top: 83px;
+        padding-right: 95px;
         .come{
             width: 22.938rem;
             height: 5.938rem;
             display: flex;
             flex-direction: column;
             align-items:stretch;
-            padding-top: 82px;
             font-weight: 400;
             font-size: 1rem;
             line-height: 25px;
+            padding-right: 128px;
             color: #FFFFFF;
+            .footer-address{
+                width: 20.938rem;
+                height: 2rem;
+            }
             .house{
-                padding-top: 15px;
+                width: 21.938rem;
+                height: 3.125rem;
+                margin-top: 15px;
                 align-items:center;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 25px;
                 pre{
                     margin: 0;
                 }
@@ -624,7 +669,8 @@ body{
             }
         }
         .call{
-            padding-top: 83px;
+            width: 10.5rem;
+            height: 7.5rem;
             h6{
                 font-weight: 400;
                 font-size: 1rem;
@@ -650,6 +696,7 @@ body{
                 line-height: 20px;
                 color: #FFFFFF;
                 text-decoration: none;
+                padding-top: 17px;
             }
         }
     }

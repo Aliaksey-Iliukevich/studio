@@ -36,6 +36,10 @@ body {
   display: flex;
 }
 
+.header .header-container .header-container-link {
+  display: none;
+}
+
 .header .header-container .menu-body {
   width: 73.438rem;
   height: 2.25rem;
@@ -51,7 +55,20 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  padding-left: 40px;
+  padding: 0;
+}
+
+.header .header-container .menu-body .menu-list .menu-nav {
+  width: 23.125rem;
+  height: 1.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 119px;
+  padding-top: 8px;
 }
 
 .header .header-container .logo {
@@ -101,7 +118,8 @@ body {
     width: 30px;
     height: 22px;
     cursor: pointer;
-    margin-left: 325px;
+    margin-left: 23px;
+    margin-top: 7px;
   }
   .header .header-container .header-menu .menu-icon span,
   .header .header-container .header-menu .menu-icon::after,
@@ -139,6 +157,7 @@ body {
     line-height: 36px;
     color: #FFFFFF;
     border-bottom: none;
+    margin: 25px 60px 10px 40px;
   }
   .header .header-container .header-menu .burger-logo h2 {
     margin-left: 30px;
@@ -155,16 +174,17 @@ body {
   .header .header-container .header-menu .menu-body {
     position: fixed;
     top: 0;
-    left: 105px;
+    left: 535px;
     z-index: 5;
-    width: 375px;
+    width: 480px;
     height: 812px;
     background-color: #443733;
     background-image: url("../../source/img/burger-logo-img.png");
-    background-size: 26.063rem 26.063rem;
+    background-size: 15rem 23rem;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-position-x: -165px;
+    background-position-x: 2px;
+    background-position-y: 415px;
     -webkit-transition: left .5s ease 0s;
     transition: left .5s ease 0s;
     overflow: auto;
@@ -192,13 +212,13 @@ body {
     width: 66px;
   }
   .header .header-container .header-menu .menu-body.__active {
-    left: 535px;
+    left: 3px;
   }
   .header .header-container .header-menu .burger-button {
     display: block;
   }
-  .header .header-container .header-menu .menu-icon.__active .menu-icon::after {
-    margin-left: 50px;
+  .header .header-container .header-menu .menu-icon.__active::after {
+    margin-left: -7px;
   }
 }
 
@@ -208,6 +228,7 @@ body {
   font-size: 1.125rem;
   line-height: 196.5%;
   color: #FFFFFF;
+  padding-top: 8px;
 }
 
 @media screen and (max-width: 767px) {
@@ -256,6 +277,13 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .header .header-container {
+    width: 20.313rem;
+    height: 1.875rem;
+  }
+}
+
 .header a {
   text-decoration: none;
 }
@@ -300,8 +328,7 @@ body {
 }
 
 .header ul li #about {
-  color: #FFFFFF;
-  border-bottom: 1px solid #fff;
+  color: #fff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -330,7 +357,20 @@ body {
 @media screen and (max-width: 767px) {
   .header {
     max-width: 30rem;
-    width: 22rem;
+    width: 30rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .header-container-link {
+    display: block;
+    padding-left: 215px;
   }
 }
 
@@ -439,42 +479,18 @@ body {
   line-height: 183.5%;
 }
 
-.about-us .about-me img {
-  width: 25.625rem;
-  height: 30rem;
+.about-us .about-me .description .contacts {
+  padding-top: 100px;
 }
 
-.about-us .contacts-container {
-  max-width: 85rem;
-  height: 32.813rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 80px;
-}
-
-.about-us .contacts-container #relax {
-  width: 40.625rem;
-  height: 36.813rem;
-  margin-left: 75px;
-}
-
-.about-us .contacts-container .contacts {
-  padding-top: 80px;
-  padding-left: 95px;
-}
-
-.about-us .contacts-container .contacts h2 {
+.about-us .about-me .description .contacts h2 {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 183%;
   margin: 0;
 }
 
-.about-us .contacts-container .contacts .sub-title {
+.about-us .about-me .description .contacts .sub-title {
   width: 17.5rem;
   height: 3.125rem;
   display: -webkit-box;
@@ -485,13 +501,13 @@ body {
           align-items: center;
 }
 
-.about-us .contacts-container .contacts .sub-title img {
+.about-us .about-me .description .contacts .sub-title img {
   width: 2.5rem;
   height: 2.5rem;
   padding-left: 30px;
 }
 
-.about-us .contacts-container .contacts .info .phone {
+.about-us .about-me .description .contacts .info .phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,11 +516,13 @@ body {
           align-items: center;
 }
 
-.about-us .contacts-container .contacts .info .phone img {
+.about-us .about-me .description .contacts .info .phone img {
   padding-right: 5px;
+  width: 1.063rem;
+  height: 1.75rem;
 }
 
-.about-us .contacts-container .contacts .info h6 {
+.about-us .about-me .description .contacts .info h6 {
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 22px;
@@ -512,19 +530,20 @@ body {
   margin: 0;
 }
 
-.about-us .contacts-container .contacts .info ul {
+.about-us .about-me .description .contacts .info ul {
   padding: 15px 0;
   margin: 0;
 }
 
-.about-us .contacts-container .contacts .info ul li {
+.about-us .about-me .description .contacts .info ul li {
   list-style: none;
   padding-top: 10px;
 }
 
-.about-us .contacts-container .contacts .info button {
+.about-us .about-me .description .contacts .info button {
   width: 15.563rem;
   height: 2.75rem;
+  margin-top: 47px;
   background: #1995F0;
   border-radius: 60px;
   border: 0;
@@ -540,32 +559,49 @@ body {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.about-us .contacts-container .contacts .info button:hover {
+.about-us .about-me .description .contacts .info button:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.about-us .contacts-container .contacts .info button:active {
+.about-us .about-me .description .contacts .info button:active {
   top: 3px;
 }
 
-.about-us .contacts-container .contacts .insta {
+.about-us .about-me img {
+  width: 25.625rem;
+  height: 30rem;
+}
+
+.about-us .contacts-container {
+  max-width: 85rem;
+  height: 32.813rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 95px;
+}
+
+.about-us .contacts-container .insta {
   width: 32.813rem;
   height: 11.375;
 }
 
-.about-us .contacts-container .contacts .insta h2 {
-  padding-top: 92px;
+.about-us .contacts-container .insta h2 {
+  margin: 0;
 }
 
-.about-us .contacts-container .contacts .insta p {
+.about-us .contacts-container .insta p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 183%;
 }
 
-.about-us .contacts-container .contacts .insta .insta-link {
+.about-us .contacts-container .insta .insta-link {
   width: 23.125rem;
   height: 5rem;
   display: -webkit-box;
@@ -576,11 +612,11 @@ body {
           align-items: center;
 }
 
-.about-us .contacts-container .contacts .insta .insta-link img {
+.about-us .contacts-container .insta .insta-link img {
   padding-left: 72px;
 }
 
-.about-us .contacts-container .contacts .insta .insta-link a {
+.about-us .contacts-container .insta .insta-link a {
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 183%;
@@ -589,11 +625,11 @@ body {
   position: relative;
 }
 
-.about-us .contacts-container .contacts .insta .insta-link a:hover {
+.about-us .contacts-container .insta .insta-link a:hover {
   color: #000000;
 }
 
-.about-us .contacts-container .contacts .insta .insta-link #link:after {
+.about-us .contacts-container .insta .insta-link #link:after {
   display: block;
   position: absolute;
   left: 0;
@@ -605,15 +641,21 @@ body {
   transition: width 0.5s;
 }
 
-.about-us .contacts-container .contacts .insta .insta-link #link:hover:after, .about-us .contacts-container .contacts .insta .insta-link #link:focus:after {
+.about-us .contacts-container .insta .insta-link #link:hover:after, .about-us .contacts-container .insta .insta-link #link:focus:after {
   width: 100%;
+}
+
+.about-us .contacts-container #relax {
+  width: 35.625rem;
+  height: 26.5rem;
+  margin-left: 75px;
 }
 
 .map {
   max-width: 85rem;
   height: 100%;
   background-color: #EEEAE4;
-  padding-top: 560px;
+  padding-top: 253px;
 }
 
 .map .address {
@@ -660,7 +702,7 @@ body {
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 22px;
-  padding-right: 500px;
+  padding-right: 614px;
   padding-top: 28px;
 }
 
@@ -747,17 +789,32 @@ body {
   display: flex;
 }
 
+.footer .house span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+
 .footer img {
   width: 18.688rem;
   height: 15.938rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer img {
+    width: 14.688rem;
+    height: 13.938rem;
+  }
 }
 
 .footer .contact-us {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 38.375rem;
+  width: 40rem;
   height: 8.125rem;
+  padding-top: 83px;
+  padding-right: 95px;
 }
 
 .footer .contact-us .come {
@@ -773,18 +830,28 @@ body {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  padding-top: 82px;
   font-weight: 400;
   font-size: 1rem;
   line-height: 25px;
+  padding-right: 128px;
   color: #FFFFFF;
 }
 
+.footer .contact-us .come .footer-address {
+  width: 20.938rem;
+  height: 2rem;
+}
+
 .footer .contact-us .come .house {
-  padding-top: 15px;
+  width: 21.938rem;
+  height: 3.125rem;
+  margin-top: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 .footer .contact-us .come .house pre {
@@ -801,7 +868,8 @@ body {
 }
 
 .footer .contact-us .call {
-  padding-top: 83px;
+  width: 10.5rem;
+  height: 7.5rem;
 }
 
 .footer .contact-us .call h6 {
@@ -835,5 +903,6 @@ body {
   line-height: 20px;
   color: #FFFFFF;
   text-decoration: none;
+  padding-top: 17px;
 }
 /*# sourceMappingURL=style.css.map */
