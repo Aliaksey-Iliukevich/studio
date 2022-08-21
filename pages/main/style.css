@@ -756,6 +756,7 @@ hr {
 }
 
 .service-container .service-container-item .container-item-price pre {
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -777,11 +778,19 @@ hr {
       -ms-grid-row-align: center;
       align-self: center;
   margin-right: 35px;
+  margin-top: 55px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .service-container .arrow img {
-  width: 30px;
-  height: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.service-container .arrow:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .more-info {
@@ -1359,7 +1368,7 @@ hr {
 }
 
 .footer .contact-us .call .media {
-  width: 8.75rem;
+  width: 5.3rem;
   height: 2.125rem;
   display: -webkit-box;
   display: -ms-flexbox;

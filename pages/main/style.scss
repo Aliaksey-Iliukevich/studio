@@ -578,6 +578,7 @@ hr{
         .container-item-price{
             width: 10.313rem;
             pre{
+                font-family: 'Montserrat';
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 20px;
@@ -596,11 +597,15 @@ hr{
     .arrow{
         align-self:center;
         margin-right: 35px;
+        margin-top: 55px;
+        transition: all .5s ease;
         img{
-            width: 30px;
-            height: 10px;
+            width: 60px;
+            height: 60px;
         }
-    
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -1012,7 +1017,7 @@ hr{
                 padding-bottom: 30px;
             }
             .media{
-                width: 8.75rem;
+                width: 5.3rem;
                 height: 2.125rem;
                 display: flex;
                 justify-content: space-between;
