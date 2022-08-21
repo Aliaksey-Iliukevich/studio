@@ -84,73 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-const swiper = new Swiper('.swiper', {
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-
-    keyboard: {
-        enabled: true,
-        onlyUnViewport: true,
-        pageUpDown: true
-    },
-    
-    mousewheel: {
-        sensitivity: 1
-    },
-
-    a11y: {
-      enabled: true,
-      prevSliderMessage: 'Предыдущий слайд',
-      nextSliderMessage: 'Следующий слайд',
-      firstSliderMessage: 'Первый слайд',
-      lastSliderMessage: 'Последний слайд',
-    },
-
-    speed: 600,
-
-    centeredSlides: true,
-
-  
-  });
-
-  const swiper2 = new Swiper('.swiper2', {
- // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-
-    keyboard: {
-        enabled: true,
-        onlyUnViewport: true,
-        pageUpDown: true
-    },
-    
-    mousewheel: {
-        sensitivity: 1
-    },
-
-    a11y: {
-      enabled: true,
-      prevSliderMessage: 'Предыдущий слайд',
-      nextSliderMessage: 'Следующий слайд',
-      firstSliderMessage: 'Первый слайд',
-      lastSliderMessage: 'Последний слайд',
-    }
-  });
-
-  const swiperr = new Swiper('.order-slider', {
+  const swiper = new Swiper('.swiper', {
     
   scrollbar: {
     el: '.swiper-scrollbar',

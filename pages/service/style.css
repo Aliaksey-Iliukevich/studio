@@ -450,7 +450,7 @@ body {
 
 .container {
   width: 73.125rem;
-  height: 177.438rem;
+  height: 250rem;
   padding: 10px 95px 100px 95px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -608,6 +608,69 @@ body {
   padding: 0 10px;
 }
 
+.container .insta {
+  width: 24.688rem;
+  height: 5.438rem;
+  margin-left: 200px;
+  margin-top: 650px;
+}
+
+.container .insta h2 {
+  margin: 0;
+}
+
+.container .insta p {
+  padding-top: 30px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 183%;
+}
+
+.container .insta .insta-link {
+  width: 23.125rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .insta .insta-link img {
+  padding-left: 72px;
+  padding-top: 50px;
+}
+
+.container .insta .insta-link a {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 183%;
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+}
+
+.container .insta .insta-link a:hover {
+  color: #000000;
+}
+
+.container .insta .insta-link #link:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000000;
+  content: "";
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.container .insta .insta-link #link:hover:after, .container .insta .insta-link #link:focus:after {
+  width: 100%;
+}
+
 .footer {
   max-width: 85rem;
   height: 20.063rem;
@@ -755,8 +818,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 28px;
 }
 

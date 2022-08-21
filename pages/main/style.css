@@ -768,6 +768,22 @@ hr {
   line-height: 24px;
 }
 
+.service-container .down {
+  margin-top: 43px;
+}
+
+.service-container .arrow {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 35px;
+}
+
+.service-container .arrow img {
+  width: 30px;
+  height: 10px;
+}
+
 .more-info {
   font-weight: 600;
   font-size: 1rem;
@@ -847,7 +863,7 @@ hr {
 }
 
 .service .order {
-  margin: 94px 101px 115px 95px;
+  margin: 142px 101px 115px 95px;
   width: 46.5rem;
   height: 43.063rem;
 }
@@ -922,7 +938,7 @@ hr {
 }
 
 .service .order form input {
-  width: 20.125rem;
+  width: 21.125rem;
   height: 2.625rem;
   background: #FFFFFF;
   border-radius: 60px;
@@ -1005,7 +1021,7 @@ hr {
 }
 
 .service .order form .select-service {
-  width: 22rem;
+  width: 23rem;
   height: 2.625rem;
   border-radius: 60px;
   border: 0;
@@ -1348,8 +1364,9 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 28px;
 }
 
