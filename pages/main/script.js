@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (error === 0){
     form.classList.add('_sending');
-    let response = await fetch('sendmail.php', {
+    let response = await fetch('mail.php', {
       method: 'POST',
       body: formData
     });
@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if(response.ok){
       let result = await response.json();
       alert(result.message);
-      formPreview.innerHTML = '';
       form.reset();
+      formPreview.innerHTML = '';
       form.classList.remove('_sending');
     } else{
-      alert('Ой... Что-то пошло не так!');
+      alert('Ой... Что-то пошло не так! Код ошибки: ' + response.status);
       form.classList.remove('_sending');
     }
   }
@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const openPopup = document.getElementsByClassName('popup-link');
-    console.log(openPopup)
     const closePopup = document.getElementsByClassName('close-popup');
     const popup = document.getElementById('popup');
     const submit = document.getElementsByClassName('submit');
