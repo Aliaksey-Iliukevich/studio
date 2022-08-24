@@ -274,14 +274,6 @@ body.lock {
 }
 
 @media screen and (max-width: 767px) {
-  .header .header-container .header-menu #instagram {
-    width: 32px;
-    height: 32px;
-    padding-top: 48px;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .header .header-container {
     width: 20.313rem;
     height: 1.875rem;
@@ -765,6 +757,14 @@ body.lock {
 .footer .instagram:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+@media screen and (max-width: 767px) {
+  .footer .instagram {
+    width: 32px;
+    height: 32px;
+    padding-top: 48px;
+  }
 }
 
 .footer #wa {

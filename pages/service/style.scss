@@ -236,14 +236,6 @@ body{
                     
                 }
             }
-        
-            #instagram{
-                @media screen and (max-width:767px) {
-                    width: 32px;
-                    height: 32px;
-                    padding-top: 48px;
-                }
-            }
         }
         @media screen and (max-width: 767px) {
             width: 20.313rem;
@@ -546,6 +538,11 @@ body{
         transition: all .5s;
         &:hover{
             transform: scale(1.2);
+        }
+        @media screen and (max-width:767px) {
+            width: 32px;
+            height: 32px;
+            padding-top: 48px;
         }
     }
     #wa{

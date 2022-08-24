@@ -14,8 +14,9 @@
         <header class="header">
             <div class="header-container">
                 <a class="logo" href="../main/index.html"><h2 class="logo">KINEZIOBAR</h2></a>
-                <a class="header-container-link" target="_blank" href="https://www.instagram.com/massage.kinezio.pro/?igshid=YmMyMTA2M2Y%3D"><img id="instagram" src="../../source/icons/instagram.png" alt="ссылка на Инстаграм кинезиолога"></a>
+                <a class="header-container-link" target="_blank" href="https://www.instagram.com/massage.kinezio.pro/?igshid=YmMyMTA2M2Y%3D"><img class="instagram" src="../../source/icons/instagram.png" alt="ссылка на Инстаграм кинезиолога"></a>
                 <div class="header-menu">
+                    <!-- <a class="menu-link" target="_blank" href="https://www.instagram.com/massage.kinezio.pro/?igshid=YmMyMTA2M2Y%3D"><img class="instagram" src="../../source/icons/instagram.png" alt="ссылка на Инстаграм кинезиолога"></a> -->
                     <div class="menu-icon">
                         <span></span>
                     </div>
@@ -25,12 +26,13 @@
                             <div class="menu-nav">
                                 <li><a class="menu-link" id="about" href="../about/index.html">О себе</a></li>
                                 <li><a class="menu-link" id="service" href="../service/index.html">Услуги</a></li>
-                                <li><a class="menu-link" id="certification" href="../certification/index.html"">Сертификаты</a></li>
+                                <li><a class="menu-link" id="certification" href="../certification/index.html">Сертификаты</a></li>
                             </div>
-                            <li class="tel"><a  target="_blank" class="tel" href="tel:+ 375 (29) 252-93-44">+ 375 (29) 252-93-44</a></li>
+                            <li class="tel"><a  target="_blank" class="tel" href="tel:+375(29)252-93-44">+ 375 (29) 252-93-44</a></li>
                             <div class="social">
-                                <li><a id="telegram" class="menu-link" target="_blank" href="https://web.telegram.org/k/#@Bezrukov43"><img src="../../source/icons/telegram.png" alt="ссылка на Телеграм кинезиолога"></a></li>
-                                <li><a class="menu-link" target="_blank" href="https://www.instagram.com/massage.kinezio.pro/?igshid=YmMyMTA2M2Y%3D"><img id="instagram" src="../../source/icons/instagram.png" alt="ссылка на Инстаграм кинезиолога"></a></li>
+                                <a id="burger-tel" class="menu-link" target="_blank" href="https://web.telegram.org/k/#@Bezrukov43"><img src="../../source/icons/telegram.png" alt="ссылка на Телеграм кинезиолога"></a>
+                                <a id="burger-inst" class="menu-link" target="_blank" href="https://www.instagram.com/massage.kinezio.pro/?igshid=YmMyMTA2M2Y%3D"><img class="instagram" src="../../source/icons/instagram.png" alt="ссылка на Инстаграм кинезиолога"></a>
+                                <a id="burger-wa" target="_blank" href="https://wa.me/+375292529344"><img src="../../source/icons/whatsapp-logo.png" alt="ссылка на Ватсап(Whatsapp) кинезиолога"></a>
                             </div>
                         </ul>
                         <button class="burger-button popup-link" type="button">Записаться online</button>
@@ -116,59 +118,60 @@
                     </div>
                  <a class="arrow" href="../service/index.html#services"><img src="../../source/icons/Arrow.png" alt="посмотреть другие услуги"></a>   
                 </div>
-            <!-- <button class="popup-link" type="button">Записаться online</button>
-            <a class="more-info" href="#">Читать подробнее об услугах</a> -->
-            <div class="order">
-                <h2>Подарочные сертификаты <br> и абонементы </h2>
-                <div class="order-container">
-                    <div class="order-info">
-                        <div class="order-choice">
-                            <button  class="option active" type="button">Сертификат</button>
-                            <button class="option" type="button"> Абонемент</button>
-                        </div>
-                        <form action="../../mail.php" method="POST" id="form" class="form-body">
-                            <input type="text" name="name" placeholder="Ваше имя" required>
-                            <input type="tel" name="phone" placeholder="+375 (XX)  XXX-XX-XX" required>
-                            <input type="text" name="count" placeholder="Кол-во сеансов" required>
-                            <select class="select-service" size="1" name="select" accesskey form>
-                                <option value="Вид услуги >">Вид услуги</option>
-                                <option value="> Биометрическая терапия">> Биометрическая терапия</option>
-                                <option value="> Кинезио-терапия">> Кинезио-терапия</option>
-                                <option value="> Массаж">> Массаж</option>
-                                <option value="> Работа со шрамом">> Работа со шрамом</option>
-                                <option value="> Эмоциональная коррекция">> Эмоциональная коррекция</option>
-                                <option value="> Постановка Атланта">> Постановка Атланта</option>
-                            </select>
-                            <button class="submit" type="submit">Отправить</button>
-                        </form>
-                        <div class="reminder">
-                            <img src="../../source/icons/gift.png" alt="иконка подарка">
-                            <p>Когда вы покупаете сертификат в подарок, вы и сами получаете скидку в 10% на следующий сеанс.</p>
-                        </div>
-                    </div>
-                    <div class="slider order-slider">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                            <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <img src="../../source/img/order-slide-1.jpg" alt="подарочные сертификаты">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="../../source/img/order-slide-2.jpg" alt="абонемент на посещение салона кинезиологии">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="../../source/img/order-slide-3.jpg" alt="визитка салона кинезиологии">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="../../source/img/order-slide-4.jpg" alt="подарочные сертификаты">
-                                </div>
+                <div class="order">
+                    <h2>Подарочные сертификаты <br> и абонементы </h2>
+                    <h2 class="mob-sub-title">Сертификаты <br> и абонементы </h2>
+                    <div class="order-container">
+                        <div class="order-info">
+                            <div class="order-choice">
+                                <button  class="option active" type="button">Сертификат</button>
+                                <button class="option" type="button"> Абонемент</button>
                             </div>
-                            <!-- If we need scrollbar -->
-                            <div class="swiper-scrollbar"></div>
+                            <form action="../../mail.php" method="POST" id="form" class="form-body">
+                                <input type="text" name="name" placeholder="Ваше имя" required>
+                                <input type="tel" name="phone" placeholder="+375 (XX)  XXX-XX-XX" required>
+                                <input type="text" name="count" placeholder="Кол-во сеансов" required>
+                                <select class="select-service" size="1" name="select" accesskey>
+                                    <option value="Вид услуги >">Вид услуги</option>
+                                    <option value="> Биометрическая терапия">> Биометрическая терапия</option>
+                                    <option value="> Кинезио-терапия">> Кинезио-терапия</option>
+                                    <option value="> Массаж">> Массаж</option>
+                                    <option value="> Работа со шрамом">> Работа со шрамом</option>
+                                    <option value="> Эмоциональная коррекция">> Эмоциональная коррекция</option>
+                                    <option value="> Постановка Атланта">> Постановка Атланта</option>
+                                </select>
+                                <button class="submit" type="submit">Отправить</button>
+                            </form>
+                            <div class="reminder">
+                                <img src="../../source/icons/gift.png" alt="иконка подарка">
+                                <p>Когда вы покупаете сертификат в подарок, вы и сами получаете скидку в 10% на следующий сеанс.</p>
+                            </div>
                         </div>
+                        <div class="slider order-slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="../../source/img/order-slide-1.jpg" alt="подарочные сертификаты">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../source/img/order-slide-2.jpg" alt="абонемент на посещение салона кинезиологии">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../source/img/order-slide-3.jpg" alt="визитка салона кинезиологии">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../source/img/order-slide-4.jpg" alt="подарочные сертификаты">
+                                    </div>
+                                </div>
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                        
                     </div>
+                    <button class="burger-order popup-link" type="button">Записаться online</button>
                 </div>
-            </div>
             </section>
             <section class="map">
                 <div class="address">
@@ -199,12 +202,12 @@
                     <div class="house">
                         <img src="../../source/icons/house.png" alt="иконка дома">
                         <span>пн-пт: 09:00-21:00, сб: 10:00-20:00, <br>
-                            <pre>вс: выходной</pre> </span>
+                              вс: выходной</span>
                     </div>
-                </div>
+                </div> 
                 <div class="call">
                     <h6>Контакты</h6>
-                    <a id="tel" href="tel:+375 (29) 252-93-44">+375 (29) 252-93-44</a>
+                    <a id="tel" href="tel:+375(29)252-93-44">+375 (29) 252-93-44</a>
                     <div class="media">
                         <a id="wa" target="_blank" href="https://wa.me/+375292529344"><img src="../../source/icons/whatsapp-logo.png" alt="ссылка на Ватсап(Whatsapp) кинезиолога"></a>
                         <!-- <a target="_blank" href="viber://chat?number=%2B375292529344"><img src="../../source/icons/viber-logo.png" alt="viber-logo"></a> -->
@@ -225,7 +228,7 @@
                         <input type="number" name="age" placeholder="Ваш полный возраст" required>
                         <input type="tel" name="phone" placeholder="+375 (XX)  XXX-XX-XX" required>
                         <input type="text" name="count" placeholder="Кол-во сеансов" required>
-                        <select class="select-service" size="1" name="select" accesskey form>
+                        <select class="select-service" size="1" name="select" accesskey>
                             <option value="Вид услуги >">Вид услуги</option>
                             <option value="> Биометрическая терапия">> Биометрическая терапия</option>
                             <option value="> Кинезио-терапия">> Кинезио-терапия</option>
