@@ -29,7 +29,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .main-container {
-    max-width: 29.938rem;
+    max-width: 24.063rem;
   }
 }
 
@@ -432,7 +432,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .header {
-    max-width: 29.938rem;
+    max-width: 24.063rem;
     position: absolute;
     background: transparent;
     display: -webkit-box;
@@ -581,7 +581,7 @@ hr {
 
 @media screen and (max-width: 767px) {
   .about {
-    width: 29.938rem;
+    width: 24.063rem;
     height: 20rem;
     background: none;
     background-image: url("../../source/img/mobile-bg-main-about.png");
@@ -1413,7 +1413,7 @@ hr {
     display: none;
   }
   .map .yandex-map {
-    width: 29.938rem;
+    width: 24.063rem;
     height: 10.188rem;
     margin: 0;
     padding-top: 20px;
