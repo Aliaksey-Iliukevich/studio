@@ -25,7 +25,7 @@ for(let i= 0; i < openPopup.length; i++){
     openPopup[i].addEventListener('click', function (e) {
     e.preventDefault();
     popup.classList.add('active');
-    document.body.classList.add('lock');
+    document.body.classList.add('__lock');
     });
 }
 
@@ -33,8 +33,7 @@ for(let i = 0; i < openPopup.length; i++) {
     closePopup[i].addEventListener('click', function(e) {
     e.preventDefault();
     popup.classList.remove('active');
-    document.body.classList.remove('lock');
+    document.body.classList.remove('__lock');
     });
 }
-
 });

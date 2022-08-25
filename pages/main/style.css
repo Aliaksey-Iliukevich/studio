@@ -1447,7 +1447,7 @@ hr {
 }
 
 .footer .footer-logo {
-  margin: 33px 95px;
+  margin: 55px 95px;
 }
 
 .footer .footer-address {
@@ -1605,7 +1605,7 @@ hr {
     padding-top: 23px;
   }
   .footer .contact-us .call .media #tel {
-    width: 9.688rem;
+    width: 10rem;
   }
   .footer .contact-us .come {
     margin-top: 50px;

@@ -526,6 +526,7 @@ body {
   .about-us .about-me .about-slider img {
     width: 23.438rem;
     height: 28.688rem;
+    border-radius: 0;
   }
 }
 
@@ -1197,7 +1198,7 @@ body {
     padding-top: 23px;
   }
   .footer .contact-us .call .media #tel {
-    width: 9.688rem;
+    width: 10rem;
   }
   .footer .contact-us .come {
     margin-top: 50px;
