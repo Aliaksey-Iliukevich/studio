@@ -28,8 +28,9 @@
                             </div>
                             <li class="tel"><a  target="_blank" class="tel" href="tel:+375(29)252-93-44">+ 375 (29) 252-93-44</a></li>
                             <div class="social">
-                                <li><a id="telegram" class="menu-link" target="_blank" href="https://web.telegram.org/k/#@Bezrukov43"><img src="../../source/icons/telegram.png" alt="ссылка на Телеграм кинезиолога"></a></li>
-                                <li><a class="menu-link" target="_blank" href="https://www.instagram.com/massage.kinezio.pro/?igshid=YmMyMTA2M2Y%3D"><img class="instagram" src="../../source/icons/instagram.png" alt="ссылка на Инстаграм кинезиолога"></a></li>
+                                <a id="burger-tel" class="menu-link" target="_blank" href="https://web.telegram.org/k/#@Bezrukov43"><img src="../../source/icons/telegram.png" alt="ссылка на Телеграм кинезиолога"></a>
+                                <a id="burger-inst" class="menu-link" target="_blank" href="https://www.instagram.com/massage.kinezio.pro/?igshid=YmMyMTA2M2Y%3D"><img class="instagram" src="../../source/icons/instagram.png" alt="ссылка на Инстаграм кинезиолога"></a>
+                                <a id="burger-wa" target="_blank" href="https://wa.me/+375292529344"><img src="../../source/icons/whatsapp-logo.png" alt="ссылка на Ватсап(Whatsapp) кинезиолога"></a>
                             </div>
                         </ul>
                         <button class="burger-button popup-link" type="button">Записаться online</button>
@@ -41,6 +42,7 @@
             <section>
                 <div class="title">
                     <h1>Подарочные сертификаты <br> и абонементы </h1>
+                    <h1 class="mob-title">Сертификаты <br> и абонементы </h1>
                     <img src="../../source/icons/certificate-icon.png" alt="иконка подарочного сертификата">
                 </div>
                 <div class="container">
@@ -72,10 +74,11 @@
                             </div>
                         </div>
                     </div>
+                    <button class="popup-link" type="button">Оставить заявку</button>
                 </div>
                 <div class="reminder">
                     <img src="../../source/icons/gift.png" alt="иконка подарка">
-                    <p>Когда вы покупаете сертификат в подарок, <br> вы и сами получаете скидку в 10% <br> на следующий сеанс.</p>
+                    <p>Когда вы покупаете сертификат в подарок, вы и сами получаете скидку в 10% на следующий сеанс.</p>
                 </div>
             </section>
         </main>
@@ -104,6 +107,32 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-body">
+            <div class="popup-content">
+                <a href="#" class="popup-close close-popup"><img src="../../source/icons/popup-close.png" alt="закрыть модальное окно"></a>
+                <div class="popup-title">Запись на услугу</div>
+                <div class="popup-form">
+                    <form action="../../mail.php" method="POST" id="popup-form" class="form-body">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="number" name="age" placeholder="Ваш полный возраст" required>
+                        <input type="tel" name="phone" placeholder="+375 (XX)  XXX-XX-XX" required>
+                        <input type="text" name="count" placeholder="Кол-во сеансов" required>
+                        <select class="select-service" size="1" name="select" accesskey>
+                            <option value="Вид услуги >">Вид услуги</option>
+                            <option value="> Биометрическая терапия">> Биометрическая терапия</option>
+                            <option value="> Кинезио-терапия">> Кинезио-терапия</option>
+                            <option value="> Массаж">> Массаж</option>
+                            <option value="> Работа со шрамом">> Работа со шрамом</option>
+                            <option value="> Эмоциональная коррекция">> Эмоциональная коррекция</option>
+                            <option value="> Постановка Атланта">> Постановка Атланта</option>
+                        </select>
+                        <button class="submit" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

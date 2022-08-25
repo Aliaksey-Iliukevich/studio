@@ -519,12 +519,12 @@ body {
 
 @media (max-width: 767px) {
   .about-us .about-me .about-slider {
-    width: 23.438rem;
+    width: 24rem;
     height: 28.688rem;
     border-radius: 20px;
   }
   .about-us .about-me .about-slider img {
-    width: 23.438rem;
+    width: 24rem;
     height: 28.688rem;
     border-radius: 0;
   }

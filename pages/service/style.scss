@@ -9,6 +9,7 @@ html{
     max-width: 85rem;
     height: 100%;
     margin: 0 auto;
+  
 }
 
 body{
@@ -22,14 +23,15 @@ body{
 }
 
 .main-container{
+    box-sizing: border-box;
     max-width: 86rem;
     height: 220rem;
     margin: 0 auto;
-    overflow-x: hidden;
     background: #EEEAE4;
     background-image: url('../../source/img/Group\ 67.png');
     background-repeat: no-repeat;
     background-position-x: center;
+    overflow: hidden;
     @media screen and (max-width: 1280px) {
         max-width: 79rem;
     }
@@ -395,9 +397,9 @@ body{
     }
     @media screen and (max-width: 767px) {
         max-width: 24rem;
-        position: absolute;
-        // z-index: 100;
-        // top: 0;
+        position: fixed;
+        z-index: 100;
+        top: 0;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;

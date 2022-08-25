@@ -14,7 +14,6 @@ if(iconMenu){
 }
 
 const openPopup = document.getElementsByClassName('popup-link');
-console.log(openPopup)
 const closePopup = document.getElementsByClassName('close-popup');
 const popup = document.getElementById('popup');
 const submit = document.getElementsByClassName('submit');
