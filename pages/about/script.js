@@ -2,6 +2,17 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
+  const iconMenu = document.querySelector('.menu-icon');
+
+    if(iconMenu){
+      const menuBody = document.querySelector('.menu-body');
+      iconMenu.addEventListener("click", function(e) {
+        iconMenu.classList.toggle('__active');
+        menuBody.classList.toggle('__active');
+        document.body.classList.toggle('__lock');
+      });
+    }
+
   const openPopup = document.getElementsByClassName('popup-link');
   console.log(openPopup);
   const closePopup = document.getElementsByClassName('close-popup');
@@ -26,16 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-    const iconMenu = document.querySelector('.menu-icon');
-
-    if(iconMenu){
-      const menuBody = document.querySelector('.menu-body');
-      iconMenu.addEventListener("click", function(e) {
-        iconMenu.classList.toggle('__active');
-        menuBody.classList.toggle('__active');
-        document.body.classList.toggle('__lock');
-      });
-    }
 });
 
 

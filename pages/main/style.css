@@ -70,6 +70,35 @@ body {
   }
 }
 
+.header .header-container .burger-logo {
+  display: none;
+}
+
+.header .header-container .burger-button {
+  display: none;
+  width: 15.563rem;
+  height: 2.75rem;
+  margin-left: 38px;
+  margin-top: 355px;
+  background: #1995F0;
+  border-radius: 60px;
+  border: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.header .header-container .burger-button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header .header-container .burger-button:active {
+  top: 3px;
+}
+
 .header .header-container .menu-body {
   width: 73.438rem;
   height: 2.25rem;
@@ -143,6 +172,51 @@ body {
   display: none;
 }
 
+.header .header-container .header-menu .social {
+  width: 6.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 38px;
+}
+
+.header .header-container .header-menu .social img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.header .header-container .header-menu .social #burger-inst {
+  width: 2rem;
+  height: 2rem;
+}
+
+.header .header-container .header-menu .social #burger-wa {
+  display: none;
+}
+
+.header .header-container .header-menu .tel {
+  width: 11.063rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 196.5%;
+  color: #FFFFFF;
+  padding-top: 8px;
+}
+
+.header .header-container .header-menu #telegram {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  padding-bottom: 25px;
+}
+
+.header .header-container .header-menu #telegram:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 @media screen and (max-width: 767px) {
   .header .header-container .header-menu .menu-icon {
     z-index: 6;
@@ -152,6 +226,17 @@ body {
     height: 22px;
     cursor: pointer;
     margin-left: 23px;
+  }
+  .header .header-container .header-menu .menu-icon span {
+    top: 50%;
+    -webkit-transform: scale(1) translate(0px, -50%);
+            transform: scale(1) translate(0px, -50%);
+  }
+  .header .header-container .header-menu .menu-icon::before {
+    top: 0;
+  }
+  .header .header-container .header-menu .menu-icon::after {
+    bottom: 0;
   }
   .header .header-container .header-menu .menu-icon span,
   .header .header-container .header-menu .menu-icon::after,
@@ -167,17 +252,6 @@ body {
   .header .header-container .header-menu .menu-icon::after,
   .header .header-container .header-menu .menu-icon::before {
     content: '';
-  }
-  .header .header-container .header-menu .menu-icon::before {
-    top: 0;
-  }
-  .header .header-container .header-menu .menu-icon::after {
-    bottom: 0;
-  }
-  .header .header-container .header-menu .menu-icon span {
-    top: 50%;
-    -webkit-transform: scale(1) translate(0px, -50%);
-            transform: scale(1) translate(0px, -50%);
   }
   .header .header-container .header-menu .burger-logo {
     display: block;
@@ -206,7 +280,7 @@ body {
   .header .header-container .header-menu .menu-body {
     position: fixed;
     top: 0;
-    left: 535px;
+    left: 767px;
     z-index: 5;
     width: 23.438rem;
     height: 50.75rem;
@@ -252,7 +326,7 @@ body {
     padding-left: 37px;
   }
   .header .header-container .header-menu .menu-body.__active {
-    left: 3px;
+    left: 60px;
     height: 50.75rem;
   }
   .header .header-container .header-menu .burger-button {
@@ -261,64 +335,18 @@ body {
   .header .header-container .header-menu .menu-icon.__active::after {
     margin-left: -7px;
   }
-}
-
-.header .header-container .header-menu .tel {
-  width: 11.063rem;
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 196.5%;
-  color: #FFFFFF;
-  padding-top: 8px;
-}
-
-@media screen and (max-width: 767px) {
   .header .header-container .header-menu .tel {
     display: none;
   }
-}
-
-.header .header-container .header-menu .social {
-  width: 6.625rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 38px;
-}
-
-.header .header-container .header-menu .social img {
-  width: 2rem;
-  height: 2rem;
-}
-
-@media (max-width: 767px) {
   .header .header-container .header-menu .social #burger-tel {
     width: 2rem;
     height: 2rem;
     margin-top: 290px;
   }
-}
-
-.header .header-container .header-menu .social #burger-inst {
-  width: 2rem;
-  height: 2rem;
-}
-
-@media (max-width: 767px) {
   .header .header-container .header-menu .social #burger-inst {
     margin-top: 315px;
     margin-left: 60px;
   }
-}
-
-.header .header-container .header-menu .social #burger-wa {
-  display: none;
-}
-
-@media (max-width: 767px) {
   .header .header-container .header-menu .social #burger-wa {
     display: block;
     width: 2rem;
@@ -326,20 +354,6 @@ body {
     margin-top: 365px;
     margin-left: 40px;
   }
-}
-
-.header .header-container .header-menu #telegram {
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  padding-bottom: 25px;
-}
-
-.header .header-container .header-menu #telegram:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-@media screen and (max-width: 767px) {
   .header .header-container .header-menu #telegram {
     width: 32px;
     height: 32px;
@@ -445,35 +459,6 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-}
-
-.burger-logo {
-  display: none;
-}
-
-.burger-button {
-  display: none;
-  width: 15.563rem;
-  height: 2.75rem;
-  margin-left: 38px;
-  margin-top: 355px;
-  background: #1995F0;
-  border-radius: 60px;
-  border: 0;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 20px;
-  color: #FFFFFF;
-}
-
-.burger-button:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.burger-button:active {
-  top: 3px;
 }
 
 .title {
@@ -1583,6 +1568,7 @@ hr {
 }
 
 .footer .contact-us .call #tel {
+  width: 155px;
   font-weight: 400;
   font-size: 1rem;
   line-height: 20px;
@@ -1663,7 +1649,7 @@ hr {
 
 @media (max-width: 767px) {
   .popup {
-    max-width: 375px;
+    max-width: 400px;
   }
 }
 
@@ -1675,7 +1661,7 @@ hr {
 
 @media (max-width: 767px) {
   .popup.active {
-    max-width: 375px;
+    max-width: 400px;
   }
 }
 
