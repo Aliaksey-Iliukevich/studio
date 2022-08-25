@@ -3,6 +3,11 @@
 body{
     font-family: 'Montserrat';
     font-style: normal;
+    @media (max-width: 767px) {
+        &::-webkit-scrollbar {
+            width: 0;
+          }
+    }
 }
 
 .__lock{
@@ -30,7 +35,6 @@ body{
     align-items: center;
     justify-content: space-evenly;
     max-width: 85rem;
-    z-index: 8;
     height: 5rem;
     background: linear-gradient(180deg, #312521 0%, #443733 100%);
     background-size: 100%;
@@ -86,8 +90,14 @@ body{
                     height: 1.375rem;
                     display: flex;
                     justify-content: space-between;
-                    padding-left: 119px;
-                    padding-top: 8px;
+                    padding: 8px 0 0 119px;
+                    @media (max-width: 1024px) {
+                        width: 20rem;
+                        padding: 8px 20px 0 40px;
+                    }
+                }
+                @media (max-width: 1024px) {
+                    justify-content: flex-start;
                 }
             }
         }
@@ -97,6 +107,17 @@ body{
             line-height: 36px;
             color: #FFFFFF;
             margin: 0;
+            .burger-logo{
+                font-weight: 700;
+                font-size: 1.875rem;
+                line-height: 36px;
+                color: #FFFFFF;
+                margin: 0;
+                display: none;
+            }
+            @media (max-width: 1024px) {
+                padding-left: 15px;
+            }
             @media screen and (max-width: 767px) {
                 width: 9.438rem;
                 height: 1.875rem;
@@ -107,14 +128,6 @@ body{
                     line-height: 30px;
                 }
     
-            }
-            .burger-logo{
-                font-weight: 700;
-                font-size: 1.875rem;
-                line-height: 36px;
-                color: #FFFFFF;
-                margin: 0;
-                display: none;
             }
      
         }
@@ -271,7 +284,7 @@ body{
 
                 .menu-body.__active{
                     left: 60px;
-                    height: 50.75rem;
+                    height: 100%;
                 }
 
                 .burger-button{
@@ -358,6 +371,12 @@ body{
                     width: 100%;
                 }
             }
+            #about{
+                color: #fff;
+                &:hover::after{
+                    display: none;
+                }
+            }
         }
         @media screen and (max-width: 1024px) {
             width: 18.125rem;
@@ -373,7 +392,7 @@ body{
     }
 
     @media screen and (max-width: 1280px){
-        width: 79rem;
+        width: 80rem;
     }
     @media screen and (max-width: 1024px) {
         max-width: 60.625rem;
@@ -381,24 +400,74 @@ body{
     @media screen and (max-width: 767px) {
         max-width: 24rem;
         position: absolute;
-        // z-index: 100;
+        z-index: 2;
         // top: 0;
         background: transparent;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
     }
-    hr{
-        display: none;
-        @media (max-width: 767px) {
-            width: 360px;
-            height: 2px;
-            background: #fff;
-            border: 0;
-            margin: 0 auto;
-            position: absolute;
-            top: 57px;
-            right: 0;
+}
+
+hr{
+    display: none;
+    width: 1170px;
+    height: 1px;
+    background: #fff;
+    border: 0;
+    margin: 0 auto;
+    @media (max-width: 767px) {
+        display: block;
+        width: 360px;
+        height: 2px;
+        position: absolute;
+        top: 57px;
+        right: 0;
+    }
+}
+
+
+.title{
+    padding-top: 47px;
+    @media screen and (max-width: 1024px) {
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+
+    p{
+        font-weight: 600;
+        font-size: 5rem;
+        line-height: 103.9%;
+        color: #FFFFFF;
+        margin: 0;
+        @media screen and (max-width: 1024px) {
+            font-size: 3rem;
+        }
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+    #line-1{
+        padding-left:90px;
+        @media screen and (max-width: 1280px) {
+            padding-left: 25px;
+        }
+        @media screen and (max-width: 767px) {
+            padding-left: 25px;
+        }
+    }
+
+    #line-2{
+        padding-left:265px;
+        @media screen and (max-width: 767px) {
+            padding-left: 25px;
+        }
+    }
+
+    #line-3{
+        padding-left:485px;
+        @media screen and (max-width: 767px) {
+            padding-left: 25px;
         }
     }
 }
@@ -568,6 +637,12 @@ body{
                     }
                 }
             }
+            @media (max-width: 1024px) {
+                height: 67rem;
+                .contacts{
+                    padding-top: 295px;
+                }
+            }
             @media (max-width: 767px) {
                 height: 68rem;
                 .text{
@@ -603,6 +678,9 @@ body{
         img{
             width: 25.625rem;
             height: 30rem;
+        }
+        @media (max-width: 1024px) {
+            padding: 60px 40px 80px 40px;
         }
         
     }
@@ -686,6 +764,15 @@ body{
                 }
             }
         }
+        @media (max-width: 1024px) {
+            margin: 0 50px;
+            #relax{
+                width: 28rem;
+            }
+        }
+        @media (max-width: 767px) {
+            margin: 0;
+        }
     }
     @media (max-width: 767px) {
         height: 110rem;
@@ -756,6 +843,9 @@ body{
                     font-weight: 600;
                 }
             }
+            @media (max-width: 1024px) {
+                padding-left: 55px;
+            }
         }
         @media screen and (max-width: 1024px) {
             width: 60.625rem;
@@ -767,8 +857,7 @@ body{
         display: flex;
         justify-content: center;
         @media screen and (max-width: 1024px) {
-            width: 48.75rem;
-            margin-left: 95px;
+            width: 60rem;
         }
     }
     @media (max-width: 767px) {
@@ -808,6 +897,12 @@ body{
             padding-top: 20px;
         }
     }
+    @media (max-width: 1024px) {
+        padding-top: 380px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 75px;
+    }
 }
 
 .footer{
@@ -834,7 +929,10 @@ body{
         }
     }
     .footer-logo{
-        margin: 33px 95px;
+        margin: 55px 95px;
+        @media (max-width: 1024px) {
+            margin: 55px 80px;
+        }
     }
     .footer-address{
         display: flex;
@@ -891,6 +989,9 @@ body{
             }
             span{
                 padding-left: 33px;
+            }
+            @media (max-width: 1024px) {
+                padding-right: 40px;
             }
         }
         .call{

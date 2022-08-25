@@ -17,7 +17,7 @@ body {
 
 @media screen and (max-width: 1280px) {
   .main-container {
-    max-width: 79rem;
+    max-width: 80rem;
   }
 }
 
@@ -126,8 +126,22 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 119px;
-  padding-top: 8px;
+  padding: 8px 0 0 119px;
+}
+
+@media (max-width: 1024px) {
+  .header .header-container .menu-body .menu-list .menu-nav {
+    width: 20rem;
+    padding: 8px 20px 0 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header .header-container .menu-body .menu-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .header .header-container .logo {
@@ -136,6 +150,21 @@ body {
   line-height: 36px;
   color: #FFFFFF;
   margin: 0;
+}
+
+.header .header-container .logo .burger-logo {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 36px;
+  color: #FFFFFF;
+  margin: 0;
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .header .header-container .logo {
+    padding-left: 15px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -149,15 +178,6 @@ body {
     font-size: 23px;
     line-height: 30px;
   }
-}
-
-.header .header-container .logo .burger-logo {
-  font-weight: 700;
-  font-size: 1.875rem;
-  line-height: 36px;
-  color: #FFFFFF;
-  margin: 0;
-  display: none;
 }
 
 .header .header-container .header-menu {
@@ -327,7 +347,7 @@ body {
   }
   .header .header-container .header-menu .menu-body.__active {
     left: 60px;
-    height: 50.75rem;
+    height: 100%;
   }
   .header .header-container .header-menu .burger-button {
     display: block;
@@ -434,7 +454,7 @@ body {
 
 @media screen and (max-width: 1280px) {
   .header {
-    width: 79rem;
+    width: 80rem;
   }
 }
 
@@ -468,6 +488,7 @@ body {
 @media screen and (max-width: 1024px) {
   .title {
     padding-top: 20px;
+    padding-left: 40px;
   }
 }
 
@@ -527,24 +548,6 @@ body {
   }
 }
 
-hr {
-  width: 1170px;
-  height: 1px;
-  background: #fff;
-  border: 0;
-  margin: 0 auto;
-}
-
-@media (max-width: 767px) {
-  hr {
-    width: 360px;
-    height: 2px;
-    position: absolute;
-    top: 57px;
-    right: 0;
-  }
-}
-
 .contact-us {
   max-width: 85rem;
   height: 5rem;
@@ -558,6 +561,24 @@ hr {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.about hr {
+  width: 1170px;
+  height: 1px;
+  background: #fff;
+  border: 0;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .about hr {
+    width: 360px;
+    height: 2px;
+    position: absolute;
+    top: 57px;
+    right: 0;
+  }
 }
 
 .about .mob-about {
@@ -689,6 +710,12 @@ hr {
   }
 }
 
+@media (max-width: 1024px) {
+  .about-desciption .subtitle {
+    padding-bottom: 120px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .about-desciption .subtitle {
     display: none;
@@ -714,13 +741,21 @@ hr {
   .about-desciption .logo-img {
     width: 9.125rem;
     height: 10.125rem;
-    right: 6%;
+    right: 3%;
+    top: -4%;
   }
 }
 
 @media screen and (max-width: 767px) {
   .about-desciption .logo-img {
     display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-desciption img {
+    width: 29rem;
+    height: 25rem;
   }
 }
 
@@ -840,6 +875,21 @@ hr {
 @media (max-width: 767px) {
   .service-container .arrow {
     margin-top: 25px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .service-container {
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .service-container {
+    margin-left: 50px;
+  }
+  .service-container #thitd {
+    display: none;
   }
 }
 
@@ -1193,6 +1243,21 @@ hr {
   }
 }
 
+@media (max-width: 1024px) {
+  .service .order {
+    margin: 142px 101px 115px 50px;
+  }
+  .service .order .order-slider {
+    width: 29.5rem;
+    height: 34.25rem;
+    margin-left: 60px;
+  }
+  .service .order .order-slider img {
+    width: 29.5rem;
+    height: 34.25rem;
+  }
+}
+
 @media (max-width: 767px) {
   .service {
     height: 97rem;
@@ -1341,6 +1406,12 @@ hr {
   font-weight: 600;
 }
 
+@media (max-width: 1024px) {
+  .map .contacts .contacts-links {
+    padding-left: 55px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .map .contacts {
     width: 60.625rem;
@@ -1360,8 +1431,7 @@ hr {
 
 @media screen and (max-width: 1024px) {
   .map .yandex-map {
-    width: 48.75rem;
-    margin-left: 95px;
+    width: 61rem;
   }
 }
 
@@ -1402,6 +1472,12 @@ hr {
     height: 10.188rem;
     margin: 0;
     padding-top: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .map {
+    padding-top: 0;
   }
 }
 
@@ -1448,6 +1524,12 @@ hr {
 
 .footer .footer-logo {
   margin: 55px 95px;
+}
+
+@media (max-width: 1024px) {
+  .footer .footer-logo {
+    margin: 55px 80px;
+  }
 }
 
 .footer .footer-address {
@@ -1534,6 +1616,12 @@ hr {
 
 .footer .contact-us .come span {
   padding-left: 33px;
+}
+
+@media (max-width: 1024px) {
+  .footer .contact-us .come {
+    padding-right: 40px;
+  }
 }
 
 .footer .contact-us .call {

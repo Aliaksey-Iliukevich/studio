@@ -84,8 +84,14 @@ body{
                     height: 1.375rem;
                     display: flex;
                     justify-content: space-between;
-                    padding-left: 119px;
-                    padding-top: 8px;
+                    padding: 8px 0 0 119px;
+                    @media (max-width: 1024px) {
+                        width: 20rem;
+                        padding: 8px 20px 0 40px;
+                    }
+                }
+                @media (max-width: 1024px) {
+                    justify-content: flex-start;
                 }
             }
         }
@@ -95,6 +101,17 @@ body{
             line-height: 36px;
             color: #FFFFFF;
             margin: 0;
+            .burger-logo{
+                font-weight: 700;
+                font-size: 1.875rem;
+                line-height: 36px;
+                color: #FFFFFF;
+                margin: 0;
+                display: none;
+            }
+            @media (max-width: 1024px) {
+                padding-left: 15px;
+            }
             @media screen and (max-width: 767px) {
                 width: 9.438rem;
                 height: 1.875rem;
@@ -105,14 +122,6 @@ body{
                     line-height: 30px;
                 }
     
-            }
-            .burger-logo{
-                font-weight: 700;
-                font-size: 1.875rem;
-                line-height: 36px;
-                color: #FFFFFF;
-                margin: 0;
-                display: none;
             }
      
         }
@@ -269,7 +278,7 @@ body{
 
                 .menu-body.__active{
                     left: 60px;
-                    height: 50.75rem;
+                    height: 100%;
                 }
 
                 .burger-button{
@@ -356,6 +365,12 @@ body{
                     width: 100%;
                 }
             }
+            #certification{
+                color: #fff;
+                &:hover::after{
+                    display: none;
+                }
+            }
         }
         @media screen and (max-width: 1024px) {
             width: 18.125rem;
@@ -371,16 +386,17 @@ body{
     }
 
     @media screen and (max-width: 1280px){
-        width: 79rem;
+        width: 80rem;
     }
     @media screen and (max-width: 1024px) {
         max-width: 60.625rem;
     }
     @media screen and (max-width: 767px) {
         max-width: 24rem;
-        position: fixed;
-        z-index: 100;
-        top: 0;
+        position: absolute;
+        // z-index: 100;
+        // top: 0;
+        background: #443733;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -390,7 +406,9 @@ body{
 section{
     max-width: 85rem;
     height: 83.438rem;
-    
+    @media (max-width: 1024px) {
+        max-width: 60rem;
+    }
 }
 .content{
     max-width: 85rem;
@@ -421,6 +439,9 @@ section{
         }
         .mob-title{
             display: none;
+        }
+        @media (max-width: 1024px) {
+            padding: 40px 522px 0 95px;
         }
     }
     .container{
@@ -575,6 +596,9 @@ section{
             line-height: 163%;
             color: #000000;
         }
+        @media (max-width: 1024px) {
+            padding: 115px 842px 106px 52px;
+        }
     }
     @media (max-width: 767px) {
         max-width: 24rem;
@@ -679,6 +703,9 @@ section{
     }
     .footer-logo{
         margin: 55px 95px;
+        @media (max-width: 1024px) {
+            margin: 55px 80px;
+        }
     }
     .footer-address{
         display: flex;
@@ -735,6 +762,9 @@ section{
             }
             span{
                 padding-left: 33px;
+            }
+            @media (max-width: 1024px) {
+                padding-right: 40px;
             }
         }
         .call{

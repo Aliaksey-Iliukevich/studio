@@ -25,7 +25,7 @@ body{
 .main-container{
     box-sizing: border-box;
     max-width: 86rem;
-    height: 220rem;
+    height: 100%;
     margin: 0 auto;
     background: #EEEAE4;
     background-image: url('../../source/img/Group\ 67.png');
@@ -103,8 +103,14 @@ body{
                     height: 1.375rem;
                     display: flex;
                     justify-content: space-between;
-                    padding-left: 119px;
-                    padding-top: 8px;
+                    padding: 8px 0 0 119px;
+                    @media (max-width: 1024px) {
+                        width: 20rem;
+                        padding: 8px 20px 0 40px;
+                    }
+                }
+                @media (max-width: 1024px) {
+                    justify-content: flex-start;
                 }
             }
         }
@@ -114,6 +120,17 @@ body{
             line-height: 36px;
             color: #FFFFFF;
             margin: 0;
+            .burger-logo{
+                font-weight: 700;
+                font-size: 1.875rem;
+                line-height: 36px;
+                color: #FFFFFF;
+                margin: 0;
+                display: none;
+            }
+            @media (max-width: 1024px) {
+                padding-left: 15px;
+            }
             @media screen and (max-width: 767px) {
                 width: 9.438rem;
                 height: 1.875rem;
@@ -124,14 +141,6 @@ body{
                     line-height: 30px;
                 }
     
-            }
-            .burger-logo{
-                font-weight: 700;
-                font-size: 1.875rem;
-                line-height: 36px;
-                color: #FFFFFF;
-                margin: 0;
-                display: none;
             }
      
         }
@@ -288,7 +297,7 @@ body{
 
                 .menu-body.__active{
                     left: 60px;
-                    height: 50.75rem;
+                    height: 100%;
                 }
 
                 .burger-button{
@@ -375,6 +384,12 @@ body{
                     width: 100%;
                 }
             }
+            #service{
+                color: #fff;
+                &:hover::after{
+                    display: none;
+                }
+            }
         }
         @media screen and (max-width: 1024px) {
             width: 18.125rem;
@@ -390,16 +405,17 @@ body{
     }
 
     @media screen and (max-width: 1280px){
-        width: 79rem;
+        width: 80rem;
     }
     @media screen and (max-width: 1024px) {
         max-width: 60.625rem;
     }
     @media screen and (max-width: 767px) {
         max-width: 24rem;
-        position: fixed;
-        z-index: 100;
-        top: 0;
+        position: absolute;
+        // z-index: 100;
+        // top: 0;
+        background: #443733;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -437,6 +453,9 @@ body{
             width: 1.875rem;
             height: 1.875rem;
         }
+    }
+    @media (max-width: 1024px) {
+        padding: 90px 45px 0 95px;
     }
 }
 .container{
@@ -610,6 +629,16 @@ body{
         }
     }
 }
+@media (max-width: 1024px) {
+    width: 48rem;
+    height: 390rem;
+    padding: 10px 95px 100px 215px;
+    .card{
+        &:nth-child(even){
+            margin-left: 0;
+        }
+    }
+}
 @media (max-width: 767px) {
     height: 365.7rem;
     padding: 15px 25px 61px;
@@ -702,6 +731,9 @@ body{
     }
     .footer-logo{
         margin: 55px 95px;
+        @media (max-width: 1024px) {
+            margin: 55px 80px;
+        }
     }
     .footer-address{
         display: flex;
@@ -758,6 +790,9 @@ body{
             }
             span{
                 padding-left: 33px;
+            }
+            @media (max-width: 1024px) {
+                padding-right: 40px;
             }
         }
         .call{
