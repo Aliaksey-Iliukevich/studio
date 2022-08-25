@@ -497,6 +497,7 @@ section {
 @media (max-width: 1024px) {
   section {
     max-width: 60rem;
+    height: 82rem;
   }
 }
 
