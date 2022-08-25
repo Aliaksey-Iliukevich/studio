@@ -21,7 +21,7 @@ body{
         max-width: 60.625rem;
     }
     @media screen and (max-width: 767px) {
-        max-width: 24.063rem;
+        max-width: 24rem;
     }
 }
 
@@ -378,7 +378,7 @@ body{
         max-width: 60.625rem;
     }
     @media screen and (max-width: 767px) {
-        max-width: 24.063rem;
+        max-width: 24rem;
         position: absolute;
         // z-index: 100;
         // top: 0;
@@ -467,7 +467,7 @@ hr{
         display: none;
     }
     @media screen and (max-width: 767px) {
-        width: 24.063rem;
+        width: 24rem;
         height: 20rem;
         background: none;
         background-image:url('../../source/img/mobile-bg-main-about.png');
@@ -1080,7 +1080,7 @@ hr{
             }
         }
         .yandex-map{
-            width: 24.063rem;
+            width: 24rem;
             height: 10.188rem;
             margin: 0;
             padding-top: 20px;

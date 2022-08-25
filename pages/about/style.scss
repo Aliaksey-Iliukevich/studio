@@ -21,7 +21,7 @@ body{
         max-width: 60.625rem;
     }
     @media screen and (max-width: 767px) {
-        max-width: 24.063rem;
+        max-width: 24rem;
     }
 }
 
@@ -379,7 +379,7 @@ body{
         max-width: 60.625rem;
     }
     @media screen and (max-width: 767px) {
-        max-width: 24.063rem;
+        max-width: 24rem;
         position: absolute;
         // z-index: 100;
         // top: 0;
@@ -443,7 +443,7 @@ body{
             height: 27.188rem;
             padding-right: 30px;
             .name{
-                width: 18.313rem;
+                // width: 18.313rem;
                 height: 3.813rem;
                 display: flex;
                 .mob-subtitle{
@@ -801,7 +801,7 @@ body{
             }
         }
         .yandex-map{
-            width: 24.063rem;
+            width: 24rem;
             height: 10.188rem;
             margin: 0;
             padding-top: 20px;

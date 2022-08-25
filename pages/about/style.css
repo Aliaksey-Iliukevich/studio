@@ -29,7 +29,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .main-container {
-    max-width: 24.063rem;
+    max-width: 24rem;
   }
 }
 
@@ -447,7 +447,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .header {
-    max-width: 24.063rem;
+    max-width: 24rem;
     position: absolute;
     background: transparent;
     display: -webkit-box;
@@ -536,7 +536,6 @@ body {
 }
 
 .about-us .about-me .description .name {
-  width: 18.313rem;
   height: 3.813rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -991,7 +990,7 @@ body {
     display: none;
   }
   .map .yandex-map {
-    width: 24.063rem;
+    width: 24rem;
     height: 10.188rem;
     margin: 0;
     padding-top: 20px;
