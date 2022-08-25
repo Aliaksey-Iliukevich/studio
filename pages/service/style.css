@@ -190,9 +190,10 @@ body {
   .header .header-container .logo {
     width: 9.438rem;
     height: 1.875rem;
+    padding-left: 0;
   }
   .header .header-container .logo h2 {
-    margin-left: 30px;
+    margin-left: 24px;
     font-weight: 700;
     font-size: 23px;
     line-height: 30px;
@@ -554,6 +555,12 @@ body {
 @media (max-width: 1024px) {
   .title {
     padding: 90px 45px 0 95px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    padding: 110px 25px 0 25px;
   }
 }
 
@@ -1013,6 +1020,11 @@ body {
 .footer .contact-us .call {
   width: 10.5rem;
   height: 7.5rem;
+  position: relative;
+}
+
+.footer .contact-us .call .footer-phone {
+  display: none;
 }
 
 .footer .contact-us .call h6 {
@@ -1049,6 +1061,20 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   padding-top: 17px;
+}
+
+@media (max-width: 767px) {
+  .footer .contact-us .call h6 {
+    padding-left: 45px;
+  }
+  .footer .contact-us .call .footer-phone {
+    display: block;
+    width: 1.875rem;
+    height: 1.875rem;
+    margin: 0;
+    position: absolute;
+    top: 0;
+  }
 }
 
 @media (max-width: 767px) {

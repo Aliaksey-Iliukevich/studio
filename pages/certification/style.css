@@ -173,10 +173,13 @@ body {
     height: 1.875rem;
   }
   .header .header-container .logo h2 {
-    margin-left: 30px;
     font-weight: 700;
     font-size: 23px;
     line-height: 30px;
+    padding: 0;
+  }
+  .header .header-container .logo a {
+    padding-left: 24px;
   }
 }
 
@@ -514,6 +517,18 @@ section {
   display: flex;
 }
 
+.content .mob-img {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .content .mob-img {
+    display: block;
+    width: 24rem;
+    height: 15rem;
+  }
+}
+
 .content .title {
   width: 51.563rem;
   height: 7.625rem;
@@ -547,6 +562,7 @@ section {
 @media (max-width: 1024px) {
   .content .title {
     padding: 40px 522px 0 95px;
+    height: 100px;
   }
 }
 
@@ -786,7 +802,8 @@ section {
 @media (max-width: 767px) {
   .content {
     max-width: 24rem;
-    height: 50rem;
+    height: 47rem;
+    background-image: none;
     background-size: 24rem 15rem;
   }
   .content .title {
@@ -808,7 +825,7 @@ section {
   }
   .content .container {
     max-width: 23.5rem;
-    height: 18rem;
+    height: 1rem;
   }
   .content .container .form {
     display: none;
@@ -819,7 +836,8 @@ section {
   .content .container button {
     width: 19.125rem;
     height: 2.688rem;
-    margin: 300px 47px 0 0;
+    margin-top: 15px;
+    margin-right: 25px;
     background: #1995F0;
     border-radius: 60px;
     border: 0;
@@ -865,6 +883,7 @@ section {
     font-size: 16px;
     line-height: 163%;
     padding: 0;
+    margin-left: 25px;
   }
   .content .reminder img {
     margin-top: 20px;
@@ -1017,6 +1036,11 @@ section {
 .footer .contact-us .call {
   width: 10.5rem;
   height: 7.5rem;
+  position: relative;
+}
+
+.footer .contact-us .call .footer-phone {
+  display: none;
 }
 
 .footer .contact-us .call h6 {
@@ -1053,6 +1077,20 @@ section {
   color: #FFFFFF;
   text-decoration: none;
   padding-top: 17px;
+}
+
+@media (max-width: 767px) {
+  .footer .contact-us .call h6 {
+    padding-left: 45px;
+  }
+  .footer .contact-us .call .footer-phone {
+    display: block;
+    width: 1.875rem;
+    height: 1.875rem;
+    margin: 0;
+    position: absolute;
+    top: 0;
+  }
 }
 
 @media (max-width: 767px) {

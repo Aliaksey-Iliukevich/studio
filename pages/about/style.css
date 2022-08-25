@@ -183,7 +183,6 @@ body {
     height: 1.875rem;
   }
   .header .header-container .logo h2 {
-    margin-left: 30px;
     font-weight: 700;
     font-size: 23px;
     line-height: 30px;
@@ -815,7 +814,7 @@ hr {
 
 @media (max-width: 767px) {
   .about-us .about-me .description {
-    height: 68rem;
+    height: 71rem;
   }
   .about-us .about-me .description .text {
     width: 20.313rem;
@@ -844,6 +843,9 @@ hr {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+  }
+  .about-us .about-me .description .contacts .info h6 {
+    padding-top: 18px;
   }
 }
 
@@ -970,6 +972,7 @@ hr {
 @media (max-width: 767px) {
   .about-us .contacts-container {
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -1299,6 +1302,11 @@ hr {
 .footer .contact-us .call {
   width: 10.5rem;
   height: 7.5rem;
+  position: relative;
+}
+
+.footer .contact-us .call .footer-phone {
+  display: none;
 }
 
 .footer .contact-us .call h6 {
@@ -1335,6 +1343,20 @@ hr {
   color: #FFFFFF;
   text-decoration: none;
   padding-top: 17px;
+}
+
+@media (max-width: 767px) {
+  .footer .contact-us .call h6 {
+    padding-left: 45px;
+  }
+  .footer .contact-us .call .footer-phone {
+    display: block;
+    width: 1.875rem;
+    height: 1.875rem;
+    margin: 0;
+    position: absolute;
+    top: 0;
+  }
 }
 
 @media (max-width: 767px) {

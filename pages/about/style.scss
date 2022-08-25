@@ -126,7 +126,6 @@ body{
                 width: 9.438rem;
                 height: 1.875rem;
                 h2{
-                    margin-left: 30px;
                     font-weight: 700;
                     font-size: 23px;
                     line-height: 30px;
@@ -648,7 +647,7 @@ hr{
                 }
             }
             @media (max-width: 767px) {
-                height: 68rem;
+                height: 71rem;
                 .text{
                     width: 20.313rem;
                     height: 41.688rem;
@@ -675,6 +674,9 @@ hr{
                         font-weight: 500;
                         font-size: 18px;
                         line-height: 22px;
+                        h6{
+                            padding-top: 18px;
+                        }
                     }
                 }
             }
@@ -776,6 +778,7 @@ hr{
         }
         @media (max-width: 767px) {
             margin: 0;
+            padding: 0;
         }
     }
     @media (max-width: 767px) {
@@ -1001,6 +1004,10 @@ hr{
         .call{
             width: 10.5rem;
             height: 7.5rem;
+            position: relative;
+            .footer-phone{
+                display: none;
+            }
             h6{
                 font-weight: 400;
                 font-size: 1rem;
@@ -1028,6 +1035,19 @@ hr{
                 color: #FFFFFF;
                 text-decoration: none;
                 padding-top: 17px;
+            }
+            @media (max-width: 767px) {
+                h6{
+                    padding-left: 45px;
+                }
+                .footer-phone{
+                    display: block;
+                    width: 1.875rem;
+                    height: 1.875rem;
+                    margin: 0;
+                    position: absolute;
+                    top: 0;
+                }
             }
         }
     }
