@@ -3,13 +3,15 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   const iconMenu = document.querySelector('.menu-icon');
-
+  const name = document.querySelectorAll('.visible');
+  console.log(name);
     if(iconMenu){
       const menuBody = document.querySelector('.menu-body');
       iconMenu.addEventListener("click", function(e) {
         iconMenu.classList.toggle('__active');
         menuBody.classList.toggle('__active');
         document.body.classList.toggle('__lock');
+        name.classList.toggle('__unvisible');
       });
     }
 
