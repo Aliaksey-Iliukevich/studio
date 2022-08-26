@@ -80,7 +80,7 @@ body {
   width: 15.563rem;
   height: 2.75rem;
   margin-left: 38px;
-  margin-top: 355px;
+  margin-top: 395px;
   background: #1995F0;
   border-radius: 60px;
   border: 0;
@@ -146,6 +146,7 @@ body {
 }
 
 .header .header-container .logo {
+  font-family: 'Cormorant Garamond';
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 36px;
@@ -297,6 +298,24 @@ body {
   .header .header-container .header-menu .burger-logo h2 {
     margin-left: 30px;
   }
+  .header .header-container .header-menu .burger-logo::after {
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 4px;
+    width: 345px;
+    height: 2px;
+    background: #FFFFFF;
+  }
+  .header .header-container .header-menu .burger-logo::before {
+    content: '';
+    position: absolute;
+    top: 46px;
+    left: 22px;
+    width: 2px;
+    height: 341px;
+    background: #FFFFFF;
+  }
   .header .header-container .header-menu .burger-logo-img {
     width: 26.063rem;
     height: 26.063rem;
@@ -313,9 +332,9 @@ body {
     z-index: 5;
     width: 23.438rem;
     height: 50.75rem;
-    background-color: #443733;
+    background-color: #372B27;
     background-image: url("../../source/img/burger-logo-img.png");
-    background-size: 15rem 23rem;
+    background-size: 15rem 25rem;
     background-repeat: no-repeat;
     background-position: bottom;
     background-position-x: 2px;
@@ -344,6 +363,7 @@ body {
   }
   .header .header-container .header-menu .menu-body .menu-list li a {
     border-bottom: 1px solid #fff;
+    color: #fff;
   }
   .header .header-container .header-menu .menu-body .menu-list #about {
     width: 66px;
@@ -399,6 +419,7 @@ body {
   .header .header-container {
     width: 20.313rem;
     height: 1.875rem;
+    padding-top: 0;
   }
 }
 
@@ -486,17 +507,18 @@ body {
 @media screen and (max-width: 767px) {
   .header {
     max-width: 24rem;
+    height: 74px;
     position: absolute;
-    background: #443733;
+    background: #372B27;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -807,6 +829,14 @@ section {
   }
 }
 
+.content .dot-1 {
+  display: none;
+}
+
+.content .dot-2 {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .content {
     max-width: 24rem;
@@ -830,6 +860,8 @@ section {
   }
   .content .title img {
     padding-left: 10px;
+    width: 1.3rem;
+    height: 1.3rem;
   }
   .content .container {
     max-width: 23.5rem;
@@ -897,11 +929,13 @@ section {
     margin-top: 8px;
   }
   .content .reminder .dot-1 {
+    display: block;
     width: 0.5rem;
     height: 0.5rem;
     margin: 0;
   }
   .content .reminder .dot-2 {
+    display: block;
     width: 0.625rem;
     height: 0.625rem;
     margin-top: 11px;
@@ -1216,6 +1250,7 @@ section {
 @media (max-width: 767px) {
   .popup-body {
     max-width: 375px;
+    padding: 0;
   }
 }
 
@@ -1245,9 +1280,22 @@ section {
   opacity: 1;
 }
 
+.popup-content .mob-close {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .popup-content {
     max-width: 241px;
+  }
+  .popup-content .pk-close {
+    display: none;
+  }
+  .popup-content .mob-close {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: -55px;
   }
 }
 
@@ -1267,6 +1315,24 @@ section {
   width: 23.5rem;
   height: 24rem;
   padding-top: 28px;
+}
+
+@media (max-width: 767px) {
+  .popup-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .popup-form input {
@@ -1319,8 +1385,7 @@ section {
 
 @media (max-width: 767px) {
   .popup-form input {
-    width: 16.125rem;
-    margin-left: 20px;
+    width: 13.125rem;
   }
 }
 
@@ -1363,8 +1428,7 @@ section {
 
 @media (max-width: 767px) {
   .popup-form button {
-    width: 19.125rem;
-    margin-left: 20px;
+    width: 16.125rem;
   }
 }
 
@@ -1389,8 +1453,7 @@ section {
 
 @media (max-width: 767px) {
   .popup-form .select-service {
-    width: 19.125rem;
-    margin-left: 20px;
+    width: 16.125rem;
   }
 }
 

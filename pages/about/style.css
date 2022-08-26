@@ -90,7 +90,7 @@ body {
   width: 15.563rem;
   height: 2.75rem;
   margin-left: 38px;
-  margin-top: 355px;
+  margin-top: 395px;
   background: #1995F0;
   border-radius: 60px;
   border: 0;
@@ -156,6 +156,7 @@ body {
 }
 
 .header .header-container .logo {
+  font-family: 'Cormorant Garamond';
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 36px;
@@ -260,6 +261,7 @@ body {
     height: 22px;
     cursor: pointer;
     margin-left: 23px;
+    margin-top: 2px;
   }
   .header .header-container .header-menu .menu-icon span {
     top: 50%;
@@ -304,6 +306,24 @@ body {
   .header .header-container .header-menu .burger-logo h2 {
     margin-left: 30px;
   }
+  .header .header-container .header-menu .burger-logo::after {
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 4px;
+    width: 345px;
+    height: 2px;
+    background: #FFFFFF;
+  }
+  .header .header-container .header-menu .burger-logo::before {
+    content: '';
+    position: absolute;
+    top: 46px;
+    left: 22px;
+    width: 2px;
+    height: 341px;
+    background: #FFFFFF;
+  }
   .header .header-container .header-menu .burger-logo-img {
     width: 26.063rem;
     height: 26.063rem;
@@ -320,9 +340,9 @@ body {
     z-index: 5;
     width: 23.438rem;
     height: 50.75rem;
-    background-color: #443733;
+    background-color: #372B27;
     background-image: url("../../source/img/burger-logo-img.png");
-    background-size: 15rem 23rem;
+    background-size: 15rem 25rem;
     background-repeat: no-repeat;
     background-position: bottom;
     background-position-x: 2px;
@@ -351,6 +371,7 @@ body {
   }
   .header .header-container .header-menu .menu-body .menu-list li a {
     border-bottom: 1px solid #fff;
+    color: #fff;
   }
   .header .header-container .header-menu .menu-body .menu-list #about {
     width: 66px;
@@ -407,6 +428,8 @@ body {
   .header .header-container {
     width: 20.313rem;
     height: 1.875rem;
+    padding-top: 0;
+    padding-bottom: 10px;
   }
 }
 
@@ -494,6 +517,7 @@ body {
 @media screen and (max-width: 767px) {
   .header {
     max-width: 24rem;
+    height: 74px;
     position: absolute;
     z-index: 2;
     background: transparent;
@@ -503,9 +527,9 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -967,6 +991,7 @@ hr {
   }
   .about-us .contacts-container .insta .insta-link img {
     padding-top: 11px;
+    padding-left: 8px;
   }
 }
 
@@ -1474,6 +1499,7 @@ hr {
 @media (max-width: 767px) {
   .popup-body {
     max-width: 375px;
+    padding: 0;
   }
 }
 
@@ -1503,9 +1529,22 @@ hr {
   opacity: 1;
 }
 
+.popup-content .mob-close {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .popup-content {
     max-width: 241px;
+  }
+  .popup-content .pk-close {
+    display: none;
+  }
+  .popup-content .mob-close {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: -55px;
   }
 }
 
@@ -1525,6 +1564,24 @@ hr {
   width: 23.5rem;
   height: 24rem;
   padding-top: 28px;
+}
+
+@media (max-width: 767px) {
+  .popup-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .popup-form input {
@@ -1577,8 +1634,7 @@ hr {
 
 @media (max-width: 767px) {
   .popup-form input {
-    width: 16.125rem;
-    margin-left: 20px;
+    width: 13.125rem;
   }
 }
 
@@ -1621,8 +1677,7 @@ hr {
 
 @media (max-width: 767px) {
   .popup-form button {
-    width: 19.125rem;
-    margin-left: 20px;
+    width: 16.125rem;
   }
 }
 
@@ -1647,8 +1702,7 @@ hr {
 
 @media (max-width: 767px) {
   .popup-form .select-service {
-    width: 19.125rem;
-    margin-left: 20px;
+    width: 16.125rem;
   }
 }
 

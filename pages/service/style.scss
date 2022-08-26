@@ -30,8 +30,9 @@ body{
     margin: 0 auto;
     background: #EEEAE4;
     background-image: url('../../source/img/Group\ 67.png');
+    background-size: 48rem 288rem;
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-position-x: right;
     overflow: hidden;
     @media screen and (max-width: 1280px) {
         max-width: 79rem;
@@ -41,6 +42,7 @@ body{
     }
     @media screen and (max-width: 767px) {
         max-width: 24rem;
+        background-size: 25rem 353.313rem;
     }
 }
 
@@ -73,7 +75,7 @@ body{
                 width: 15.563rem;
                 height: 2.75rem;
                 margin-left: 38px;
-                margin-top: 355px;
+                margin-top: 395px;
                 background: #1995F0;
                 border-radius: 60px;
                 border: 0;
@@ -116,6 +118,7 @@ body{
             }
         }
         .logo{
+            font-family: 'Cormorant Garamond';
             font-weight: 700;
             font-size: 1.875rem;
             line-height: 36px;
@@ -202,6 +205,7 @@ body{
                     height: 22px;
                     cursor: pointer;
                     margin-left: 23px;
+                    margin-top: 2px;
                 }
 
                 .menu-icon span{
@@ -251,6 +255,25 @@ body{
                         h2{
                             margin-left: 30px;
                         }
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            top: 56px;
+                            left: 4px;
+                            width: 345px;
+                            height: 2px;
+                            background: #FFFFFF;
+                        }
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            top: 46px;
+                            left: 22px;
+                            width: 2px;
+                            height: 341px;
+                            background: #FFFFFF;
+
+                        }
                 }
 
                 .burger-logo-img{
@@ -266,13 +289,13 @@ body{
                 .menu-body{
                     position: fixed;
                     top: 0;
-                    left: 395px;
+                    left: 767px;
                     z-index: 5;
                     width: 23.438rem;
                     height: 50.75rem;
-                    background-color: #443733;
+                    background-color: #372B27;
                     background-image:url('../../source/img/burger-logo-img.png');
-                    background-size: 15rem 23rem;
+                    background-size: 15rem 25rem;
                     background-repeat:no-repeat;
                     background-position: bottom;
                     background-position-x: 2px;
@@ -290,6 +313,7 @@ body{
                             margin-top: 30px;
                             a{
                                 border-bottom: 1px solid #fff;
+                                color: #fff;
                             }
                         }
                         #about{
@@ -356,6 +380,7 @@ body{
         @media screen and (max-width: 767px) {
             width: 20.313rem;
             height: 1.875rem;
+            padding-top: 0;
         }
     }
 
@@ -421,13 +446,12 @@ body{
     }
     @media screen and (max-width: 767px) {
         max-width: 24rem;
+        height: 74px;
         position: absolute;
-        // z-index: 100;
-        // top: 0;
-        background: #443733;
+        background: #372B27;
         display: flex;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
     }
 }
 
@@ -551,10 +575,16 @@ body{
         height: 1.875rem;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-start;
         padding: 27px 92px 30px 30px;
+        .mob-gift{
+            width: 260px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
         span{
-            width: 7rem;
+            width: 5.1rem;
             height: 1.5rem;
             font-weight: 500;
             font-size: 1.25rem;
@@ -562,26 +592,28 @@ body{
             padding-right: 24px;
         }
         p{
-            width: 5rem;
+            width: 4rem;
             height: 1.25rem;
             padding: 0;
             font-weight: 400;
             font-size: 1rem;
             line-height: 20px;
-            padding-right: 42px;
+            padding-right: 32px;
         }
         a{
-            width: 28rem;
+            width: 14rem;
             height: 1.875rem;
+            position: absolute;
+            left: 50px;
+            top: 1px;
             padding: 0;
             font-weight: 400;
             font-size: 1rem;
             line-height: 150%;
             color: #1995F0;
-            text-decoration: none;
-
         }
         img{
+            display: inline-block;
             width: 1.688rem;
             height: 1.688rem;
             padding: 0 10px;
@@ -707,6 +739,13 @@ body{
             }
             a{
                 padding-top: 26px;
+                text-decoration: underline;
+            }
+            .mob-gift{
+                    display: flex;
+                    align-items: center;
+                    padding-top: 25px;
+                    width: 260px;
             }
         }
         button{
@@ -935,6 +974,7 @@ body{
     padding: 30px 10px;
     @media (max-width: 767px) {
         max-width: 375px;
+        padding: 0;
     }
 }
 
@@ -952,8 +992,20 @@ body{
     position: relative;
     transition: all .6s ease;
     opacity: 1;
+    .mob-close{
+        display: none;
+    }
     @media (max-width: 767px) {
         max-width: 241px;
+        .pk-close{
+            display: none;
+        }
+        .mob-close{
+            display: block;
+            position: absolute;
+            right: 5px;
+            top: -55px;
+        }
     }
 }
 
@@ -973,6 +1025,14 @@ body{
     width: 23.5rem;
     height: 24rem;
     padding-top: 28px;
+    form{
+        @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
     input{
         width: 20.125rem;
         height: 2.625rem;
@@ -993,8 +1053,7 @@ body{
             outline: none;
         }
         @media (max-width: 767px) {
-            width: 16.125rem;
-            margin-left: 20px;
+            width: 13.125rem;
         }
     }
     button{
@@ -1024,8 +1083,7 @@ body{
             outline: none;
         }
         @media (max-width: 767px) {
-            width: 19.125rem;
-            margin-left: 20px;
+            width: 16.125rem;
         }
 
     }
@@ -1046,8 +1104,7 @@ body{
             border-radius: 60px;
         }
         @media (max-width: 767px) {
-            width: 19.125rem;
-            margin-left: 20px;
+            width: 16.125rem;
         }
     }
     @media (max-width: 767px) {
