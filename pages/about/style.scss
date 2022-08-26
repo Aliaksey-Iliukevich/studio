@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 body{
@@ -38,7 +39,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    max-width: 85rem;
+    max-width: 86rem;
     height: 5rem;
     background: linear-gradient(180deg, #312521 0%, #443733 100%);
     background-size: 100%;
@@ -51,7 +52,7 @@ body{
             display: none;
             @media (max-width: 767px) {
                 display: block;
-                margin-left: 112px;
+                margin-left: 125px;
             }
         }
         .burger-logo{
@@ -125,9 +126,13 @@ body{
             @media screen and (max-width: 767px) {
                 width: 9.438rem;
                 height: 1.875rem;
+                padding-left: 0;
                 h2{
+                    margin-left: 24px;
+                    font-family: 'Cormorant Garamond';
+                    font-style: normal;
                     font-weight: 700;
-                    font-size: 23px;
+                    font-size: 25px;
                     line-height: 30px;
                 }
     
@@ -225,6 +230,8 @@ body{
                         display: block;
                         width: 9.438rem;
                         height: 1.563rem;
+                        font-family: 'Cormorant Garamond';
+                        font-style: normal;
                         font-weight: 700;
                         font-size: 25px;
                         line-height: 30px;
@@ -272,7 +279,9 @@ body{
                         margin: 35px 116px 0 0;
                         li{
                             margin-top: 30px;
-                            border-bottom: 1px solid #fff;
+                            a{
+                                border-bottom: 1px solid #fff;
+                            }
                         }
                         #about{
                             width: 66px;
@@ -287,7 +296,8 @@ body{
 
                 .menu-body.__active{
                     left: 60px;
-                    height: 100%;
+                    width: 349px;
+                    height: 812px;
                 }
 
                 .burger-button{
@@ -484,7 +494,7 @@ hr{
 }
 
 .about-us{
-    max-width: 85rem;
+    max-width: 86rem;
     height: 83rem;
     justify-content: center;
     background-color: #EEEAE4;
@@ -692,7 +702,7 @@ hr{
     }
 
     .contacts-container{ 
-    max-width: 85rem;
+    max-width: 86rem;
     height: 32.813rem;
     display: flex;
     align-items: center;
@@ -791,7 +801,7 @@ hr{
 }
 
 .map{
-    max-width: 85rem;
+    max-width: 86rem;
     height: 42.125rem;
     background-color: #EEEAE4;
     padding-top: 280px;
@@ -913,7 +923,7 @@ hr{
 }
 
 .footer{
-    max-width: 85rem;
+    max-width: 86rem;
     height: 20.063rem;
     background: linear-gradient(180deg, #312521 0%, #443733 100%);
     display: flex;
@@ -1046,7 +1056,7 @@ hr{
                     height: 1.875rem;
                     margin: 0;
                     position: absolute;
-                    top: 0;
+                    top: -5px;
                 }
             }
         }

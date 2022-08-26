@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
@@ -6,7 +7,7 @@
 }
 
 html {
-  max-width: 85rem;
+  max-width: 86rem;
   height: 100%;
   margin: 0 auto;
 }
@@ -62,7 +63,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  max-width: 85rem;
+  max-width: 86rem;
   height: 5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#312521), to(#443733));
   background: linear-gradient(180deg, #312521 0%, #443733 100%);
@@ -85,7 +86,7 @@ body {
 @media (max-width: 767px) {
   .header .header-container .header-container-link {
     display: block;
-    margin-left: 112px;
+    margin-left: 125px;
   }
 }
 
@@ -194,8 +195,10 @@ body {
   }
   .header .header-container .logo h2 {
     margin-left: 24px;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
     font-weight: 700;
-    font-size: 23px;
+    font-size: 25px;
     line-height: 30px;
   }
 }
@@ -297,6 +300,8 @@ body {
     display: block;
     width: 9.438rem;
     height: 1.563rem;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
@@ -320,7 +325,7 @@ body {
   .header .header-container .header-menu .menu-body {
     position: fixed;
     top: 0;
-    left: 767px;
+    left: 395px;
     z-index: 5;
     width: 23.438rem;
     height: 50.75rem;
@@ -352,6 +357,8 @@ body {
   }
   .header .header-container .header-menu .menu-body .menu-list li {
     margin-top: 30px;
+  }
+  .header .header-container .header-menu .menu-body .menu-list li a {
     border-bottom: 1px solid #fff;
   }
   .header .header-container .header-menu .menu-body .menu-list #about {
@@ -367,7 +374,8 @@ body {
   }
   .header .header-container .header-menu .menu-body.__active {
     left: 60px;
-    height: 100%;
+    width: 349px;
+    height: 812px;
   }
   .header .header-container .header-menu .burger-button {
     display: block;
@@ -875,7 +883,7 @@ body {
 }
 
 .footer {
-  max-width: 85rem;
+  max-width: 86rem;
   height: 20.063rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#312521), to(#443733));
   background: linear-gradient(180deg, #312521 0%, #443733 100%);
@@ -1073,7 +1081,7 @@ body {
     height: 1.875rem;
     margin: 0;
     position: absolute;
-    top: 0;
+    top: -5px;
   }
 }
 
